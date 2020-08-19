@@ -1,0 +1,64 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+.contact-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px 1%;
+  font-family: sans-b;
+  font-size: 15px;
+  color: rgba(40, 40, 40, 0.9);
+  direction: rtl; }
+  .contact-container .contact-form {
+    flex-basis: 40%;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    padding: 20px 1%; }
+    .contact-container .contact-form label {
+      display: block;
+      margin: 20px 0; }
+    .contact-container .contact-form input, .contact-container .contact-form textarea {
+      border: 1px solid grey;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 14px;
+      font-family: sans-r;
+      width: 100%;
+      resize: none; }
+    .contact-container .contact-form button {
+      border: 2px solid white;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 2%;
+      width: 30%;
+      text-align: center;
+      background-color: #03A293;
+      font-family: sans-b;
+      cursor: pointer;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      font-size: 16px;
+      margin: 20px auto;
+      display: block; }
+      .contact-container .contact-form button:hover {
+        background-color: transparent;
+        color: #03A293;
+        border: 2px solid #03A293;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in; }
+  .contact-container .contact-image {
+    flex-basis: 40%; }

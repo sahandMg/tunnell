@@ -1,0 +1,61 @@
+@import "mixins";
+.pricing{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: $bgColor3;
+}
+.pricing-box{
+  //width:40%;
+  //margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 30px 5%;
+  background: transparent;
+  text-align: center;
+  color: $font_light_color;
+  font-family: sans-b;
+  direction: rtl;
+  box-shadow: 0 0 5px gray;
+  .price{
+    padding: 20px 1%;
+    font-size: $h1_size - 5px;
+    .rate{
+      margin-top: 10px;
+      font-size: $h2_size;
+    }
+  }
+  .box-disc{
+
+    p{
+      font-size: $h3_size;
+      margin: 20px 0;
+    }
+    a{
+      @include removeLinkStyle($font_light_color);
+      @include btnLinkStyle1();
+      display: inline-block;
+      width: 50%;
+      font-size: $h3_size;
+      margin-top: 20px;
+      &:hover{
+        background-color: $btnHoverBgColor;
+        @include hooverTransition();
+      }
+    }
+  }
+}
+.feature-box{
+
+}
+.pricing-container{
+  position: relative;
+}
+.stopwatch{
+  width: 15%;
+  margin: 0 5%;
+
+}

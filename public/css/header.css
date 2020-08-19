@@ -1,0 +1,215 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+.cls-1 {
+  isolation: isolate; }
+
+.cls-2 {
+  opacity: 0.75;
+  mix-blend-mode: multiply; }
+
+.cls-3 {
+  fill: #282828; }
+
+.cls-4, .cls-6, .cls-7 {
+  font-size: 12px;
+  font-family: CourierNewPS-BoldMT, Courier New;
+  font-weight: 700; }
+
+.cls-4 {
+  fill: #ffde17; }
+
+.cls-5, .cls-7 {
+  fill: #f1f2f2; }
+
+.cls-6 {
+  fill: #00ade5; }
+
+#command1Result, #command2Result {
+  opacity: 0; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*, *:after, *:before {
+  box-sizing: inherit; }
+
+header {
+  background-image: linear-gradient(180deg, #285d6d, #03A293);
+  height: 100%;
+  z-index: -1; }
+
+.wrap {
+  border-left: 0.2em solid #fff; }
+
+.terminal-figure {
+  padding: 20px 1%;
+  flex-basis: 40%;
+  text-align: center;
+  position: relative; }
+
+.terminal-figure img {
+  width: 60%;
+  text-align: left;
+  border-radius: 10px; }
+
+.web-window {
+  position: absolute;
+  opacity: 0;
+  z-index: 0; }
+
+.terminalBox {
+  position: relative;
+  z-index: 1; }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 2%; }
+
+.header-description {
+  flex-basis: 45%;
+  color: white;
+  font-family: sans-b;
+  text-align: right;
+  align-self: center;
+  line-height: 2;
+  padding-right: 5%; }
+  @media screen and (min-width: 1224px) {
+    .header-description {
+      flex-basis: 50%; } }
+  .header-description h1 {
+    font-size: 42px; }
+    @media screen and (min-width: 1224px) {
+      .header-description h1 {
+        font-size: 38px; } }
+  .header-description h2 {
+    font-size: 24px; }
+  .header-description h3 {
+    font-size: 18px; }
+
+.plugin {
+  width: 100%;
+  position: absolute;
+  z-index: -2; }
+
+.nav-plugin {
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  padding: 0;
+  opacity: 0; }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: transparent;
+  display: flex; }
+
+.nav-plugin-text {
+  position: absolute;
+  width: 8%;
+  z-index: 5;
+  opacity: 0; }
+
+.nav-ul {
+  flex-basis: 80%;
+  list-style: none;
+  display: flex;
+  font-family: sans-b;
+  font-size: 14px;
+  padding: 30px 5%;
+  direction: rtl; }
+  .nav-ul li {
+    margin-left: 5%;
+    flex-basis: 7%;
+    text-align: center; }
+  .nav-ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 2px solid transparent; }
+    .nav-ul a:hover {
+      border-bottom: 2px solid white;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+
+.active {
+  border-bottom: 2px solid white !important; }
+
+.auth-ul {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding: 30px 5px; }
+  .auth-ul li {
+    margin: 0 2%;
+    flex-basis: 100%; }
+  .auth-ul .reg, .auth-ul .login {
+    display: inline-block;
+    font-family: sans-b;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 2%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .auth-ul .reg:hover, .auth-ul .login:hover {
+      background-color: #03A293;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+
+.cta {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 2%;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  font-size: 22px;
+  flex-basis: 40%;
+  direction: rtl; }
+  @media screen and (min-width: 1224px) {
+    .cta {
+      font-size: 20px; } }
+  .cta:hover {
+    background-color: #03A293;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+
+.body {
+  position: absolute;
+  width: 100%; }

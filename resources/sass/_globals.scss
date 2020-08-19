@@ -1,0 +1,14 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff");
+}
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff");
+}
+$h1_size : 42px;
+$h2_size : 24px;
+$h3_size : 18px;
+$reg_font : sans-r;
+$bold_font : sans-b;
+$nav_items_top_padding : 30px;

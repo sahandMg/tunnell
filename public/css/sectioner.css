@@ -1,0 +1,15 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+.section-title {
+  font-family: sans-b;
+  font-size: 32px;
+  text-align: center;
+  color: rgba(40, 40, 40, 0.9);
+  padding: 20px;
+  margin-bottom: 20px; }

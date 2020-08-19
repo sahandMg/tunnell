@@ -1,0 +1,47 @@
+@import "colors";
+@import "globals";
+@mixin removeLinkStyle($color){
+  text-decoration: none;
+  color: $color;
+}
+@mixin hooverTransition(){
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+@mixin btnLinkStyle1{
+
+  border: 2px solid $font_light_color;
+  border-radius: 10px;
+  padding: 10px 2%;
+  width: 100%;
+  text-align: center;
+  //background-color:transparent ;
+  @include hooverTransition;
+
+}
+
+@mixin btnLinkStyle2{
+
+  border: 2px solid $font_light_color;
+  color: $font_light_color;
+  border-radius: 10px;
+  padding: 10px 2%;
+  width: 30%;
+  text-align: center;
+  background-color: $btnBgColor2 ;
+  font-family: $bold_font;
+  cursor: pointer;
+  @include hooverTransition;
+
+}
+
+@mixin medium_screen{
+
+  @media screen and (min-width: 1224px)  {
+
+    @content ;
+  }
+}

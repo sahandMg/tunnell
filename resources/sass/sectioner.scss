@@ -1,0 +1,9 @@
+@import "mixins";
+.section-title{
+  font-family: $bold_font;
+  font-size: $h1_size - 10px;
+  text-align: center;
+  color: $font_dark_color;
+  padding: 20px;
+  margin-bottom: 20px;
+}
