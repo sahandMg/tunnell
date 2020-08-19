@@ -17,6 +17,9 @@
   font-size: 12px;
   font-family: CourierNewPS-BoldMT, Courier New;
   font-weight: 700;
+  @include extra_small_screen{
+    font-size: 13px;
+  }
 }
 
 .cls-4 {
@@ -40,7 +43,7 @@ html,body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 *,*:after,*:before{
   box-sizing: inherit;
@@ -58,6 +61,9 @@ header{
   flex-basis: 40%;
   text-align: center;
   position: relative;
+  @include semi_medium_screen{
+
+  }
 }
 .terminal-figure img{
   width: 60%;
@@ -68,16 +74,32 @@ header{
   position: absolute;
   opacity: 0;
   z-index: 0;
-
+  @include semi_medium_screen{
+    margin-top: 50px;
+  }
 }
 .terminalBox{
   position: relative;
   z-index: 1;
+  @include semi_medium_screen{
+    width: 60%;
+  }
+  @include small_screen{
+    width: 100%;
+  }
+  @include extra_small_screen{
+    margin-top: 20px;
+    overflow: hidden;
+  }
 }
 .header-container{
   display: flex;
   justify-content: space-between;
   padding: 70px 2%;
+  @include semi_medium_screen{
+    flex-direction: column-reverse;
+    padding: 70px 5%;
+  }
 }
 .header-description{
   flex-basis: 45%;
@@ -89,18 +111,50 @@ header{
   padding-right: 5%;
   @include medium_screen{
     flex-basis: 50%;
+    text-align: center;
   }
   h1{
     font-size: $h1_size;
     @include medium_screen(){
       font-size: $h1_size - 4px;
     }
+    @include semi_medium_screen{
+
+    }
+    @include small_screen{
+
+      font-size: $h1_size - 4px;
+    }
+    @include semi_medium_screen{
+
+      font-size: $h1_size - 12px;
+    }
+    @include extra_small_screen{
+
+      font-size: $h2_size - 2px;
+    }
+    @include super_small_screen{
+
+      font-size: $h2_size - 4px;
+    }
   }
   h2{
     font-size: $h2_size;
+    @include small_screen{
+      font-size: $h2_size - 5px;
+    }
+    @include extra_small_screen{
+      font-size: $h2_size - 8px;
+    }
   }
   h3{
     font-size: $h3_size;
+    @include small_screen{
+      font-size: $h2_size - 10px;
+    }
+    @include extra_small_screen{
+      font-size: $h2_size - 12px;
+    }
   }
 }
 .plugin{
@@ -114,6 +168,9 @@ header{
   z-index: -2;
   padding: 0;
   opacity: 0;
+  @include semi_medium_screen{
+    display: none;
+  }
 }
 .nav-bar{
   position: fixed;
@@ -124,12 +181,18 @@ header{
   //background-color: $nav_color;
   background-color: transparent;
   display: flex;
+  @include semi_medium_screen{
+    display: none;
+  }
 }
 .nav-plugin-text{
   position: absolute;
   width: 8%;
   z-index: 5;
   opacity: 0;
+  @include semi_medium_screen{
+    display: none;
+  }
 }
 .nav-ul{
   flex-basis: 80%;
@@ -154,8 +217,6 @@ header{
       border-bottom: 2px solid $nav_hover_color;
       @include hooverTransition()
     }
-
-
   }
 }
 .active{
@@ -188,11 +249,21 @@ header{
 .cta{
   @include removeLinkStyle($font_light_color);
   @include btnLinkStyle1;
-  font-size: 22px;
+  font-size: $h2_size;
   flex-basis:40%;
   direction: rtl;
   @include medium_screen{
-    font-size:20px;
+    font-size:$h2_size - 2px;
+  }
+  @include semi_medium_screen{
+    font-size:$h2_size - 4px;
+  }
+  @include small_screen{
+
+    font-size: $h3_size;
+  }
+  @include extra_small_screen{
+    font-size: $h3_size - 3px;
   }
   &:hover{
     background-color: $btnHoverBgColor;

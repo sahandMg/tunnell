@@ -1,1 +1,103 @@
 @import "mixins";
+.footer-container{
+  background-color: $bgColor3;
+  border-top: 5px solid $header_color2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px 1%;
+  margin-top: 50px;
+  @include small_screen{
+    flex-direction: column;
+  }
+  .footer-about{
+    flex-basis: 33%;
+    text-align: center;
+    border-right: 3px solid $bgColor2;
+    img{
+      width: 10%;
+    }
+    p{
+      font-family: $reg_font;
+      font-size: 16px;
+      color: $font_light_color;
+      line-height: 2;
+    }
+    @include small_screen{
+      padding: 10px 2%;
+      border: none;
+      border-bottom: 3px solid $bgColor2;
+    }
+  }
+  .footer-links{
+    flex-basis: 33%;
+    padding: 10px;
+    border-right: 3px solid $bgColor2;
+    direction: rtl;
+    text-align: right;
+    color: $font_light_color;
+    font-family: $reg_font;
+    .link-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      ul{
+        margin: 20px 5%;
+      }
+      li{
+        margin-top: 20px;
+      }
+      a{
+        @include removeLinkStyle($font_light_color);
+        &:hover{
+        color: $link_hover_color;
+        @include hooverTransition
+      }
+      }
+    }
+    @include small_screen{
+      padding: 10px 2%;
+      border: none;
+      border-bottom: 3px solid $bgColor2;
+    }
+  }
+  .footer-contact{
+    flex-basis: 33%;
+    padding: 10px;
+    direction: rtl;
+    text-align: right;
+    color: $font_light_color;
+    font-family: $reg_font;
+    @include small_screen{
+      padding: 10px 2%;
+    }
+    .contact-item{
+      padding: 10px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      @include small_screen{
+        justify-content: center;
+      }
+      *{
+        margin: 1%;
+      }
+      img{
+        width: 7%;
+      }
+      a{
+        font-size: 16px;
+        @include removeLinkStyle($font_light_color);
+        &:hover{
+          color: $link_hover_color;
+          @include hooverTransition;
+        }
+      }
+
+    }
+  }
+
+}

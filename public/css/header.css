@@ -20,6 +20,10 @@
   font-size: 12px;
   font-family: CourierNewPS-BoldMT, Courier New;
   font-weight: 700; }
+  @media screen and (max-width: 480px) {
+    .cls-4, .cls-6, .cls-7 {
+      max-width: 480px;
+      font-size: 13px; } }
 
 .cls-4 {
   fill: #ffde17; }
@@ -36,7 +40,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *, *:after, *:before {
   box-sizing: inherit; }
@@ -54,6 +59,9 @@ header {
   flex-basis: 40%;
   text-align: center;
   position: relative; }
+  @media screen and (max-device-width: 1025px) {
+    .terminal-figure {
+      max-width: 1025px; } }
 
 .terminal-figure img {
   width: 60%;
@@ -64,15 +72,37 @@ header {
   position: absolute;
   opacity: 0;
   z-index: 0; }
+  @media screen and (max-device-width: 1025px) {
+    .web-window {
+      max-width: 1025px;
+      margin-top: 50px; } }
 
 .terminalBox {
   position: relative;
   z-index: 1; }
+  @media screen and (max-device-width: 1025px) {
+    .terminalBox {
+      max-width: 1025px;
+      width: 60%; } }
+  @media screen and (max-width: 667px) {
+    .terminalBox {
+      max-width: 667px;
+      width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .terminalBox {
+      max-width: 480px;
+      margin-top: 20px;
+      overflow: hidden; } }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   padding: 70px 2%; }
+  @media screen and (max-device-width: 1025px) {
+    .header-container {
+      max-width: 1025px;
+      flex-direction: column-reverse;
+      padding: 70px 5%; } }
 
 .header-description {
   flex-basis: 45%;
@@ -82,18 +112,56 @@ header {
   align-self: center;
   line-height: 2;
   padding-right: 5%; }
-  @media screen and (min-width: 1224px) {
+  @media screen and (max-width: 1224px) {
     .header-description {
-      flex-basis: 50%; } }
+      max-width: 1224px;
+      flex-basis: 50%;
+      text-align: center; } }
   .header-description h1 {
     font-size: 42px; }
-    @media screen and (min-width: 1224px) {
+    @media screen and (max-width: 1224px) {
       .header-description h1 {
+        max-width: 1224px;
         font-size: 38px; } }
+    @media screen and (max-device-width: 1025px) {
+      .header-description h1 {
+        max-width: 1025px; } }
+    @media screen and (max-width: 667px) {
+      .header-description h1 {
+        max-width: 667px;
+        font-size: 38px; } }
+    @media screen and (max-device-width: 1025px) {
+      .header-description h1 {
+        max-width: 1025px;
+        font-size: 30px; } }
+    @media screen and (max-width: 480px) {
+      .header-description h1 {
+        max-width: 480px;
+        font-size: 22px; } }
+    @media screen and (max-width: 368px) {
+      .header-description h1 {
+        max-width: 368px;
+        font-size: 20px; } }
   .header-description h2 {
     font-size: 24px; }
+    @media screen and (max-width: 667px) {
+      .header-description h2 {
+        max-width: 667px;
+        font-size: 19px; } }
+    @media screen and (max-width: 480px) {
+      .header-description h2 {
+        max-width: 480px;
+        font-size: 16px; } }
   .header-description h3 {
     font-size: 18px; }
+    @media screen and (max-width: 667px) {
+      .header-description h3 {
+        max-width: 667px;
+        font-size: 14px; } }
+    @media screen and (max-width: 480px) {
+      .header-description h3 {
+        max-width: 480px;
+        font-size: 12px; } }
 
 .plugin {
   width: 100%;
@@ -106,6 +174,10 @@ header {
   z-index: -2;
   padding: 0;
   opacity: 0; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-plugin {
+      max-width: 1025px;
+      display: none; } }
 
 .nav-bar {
   position: fixed;
@@ -114,12 +186,20 @@ header {
   width: 100%;
   background-color: transparent;
   display: flex; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-bar {
+      max-width: 1025px;
+      display: none; } }
 
 .nav-plugin-text {
   position: absolute;
   width: 8%;
   z-index: 5;
   opacity: 0; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-plugin-text {
+      max-width: 1025px;
+      display: none; } }
 
 .nav-ul {
   flex-basis: 80%;
@@ -196,12 +276,25 @@ header {
   -ms-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  font-size: 22px;
+  font-size: 24px;
   flex-basis: 40%;
   direction: rtl; }
-  @media screen and (min-width: 1224px) {
+  @media screen and (max-width: 1224px) {
     .cta {
+      max-width: 1224px;
+      font-size: 22px; } }
+  @media screen and (max-device-width: 1025px) {
+    .cta {
+      max-width: 1025px;
       font-size: 20px; } }
+  @media screen and (max-width: 667px) {
+    .cta {
+      max-width: 667px;
+      font-size: 18px; } }
+  @media screen and (max-width: 480px) {
+    .cta {
+      max-width: 480px;
+      font-size: 15px; } }
   .cta:hover {
     background-color: #03A293;
     -webkit-transition: all 0.5s ease-in;

@@ -6,10 +6,17 @@
   right: 0;
   padding: 0 2%;
   i{
-    transform: scale(2);
+    transform: scale(3);
     color:$navUpColor;
     @include medium_screen{
       transform: scale(1.5);
+    }
+    @include semi_medium_screen{
+      transform: scale(2);
+      padding: 0 5%;
+    }
+    @include small_screen{
+      padding-right: 8% !important;
     }
   }
 }

@@ -34,14 +34,12 @@
     <img class="nav-plugin-text" src="{{URL::asset('images/svg/text.svg')}}" alt="">
     <img class="nav-plugin" src="{{URL::asset('images/svg/navPlugin2.svg')}}" alt="">
 </nav>
-<header>
+<header class="body-header">
     <div class="header-container">
         <div class="terminal-figure">
-            <!-- <img class="terminal-window" src="./terminal.svg" alt=""> -->
+
             <div class="terminalBox">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 493.2 285.36">
-                    <defs>
-                    </defs>
 
                     <g class="cls-1">
                         <g id="Layer_2" data-name="Layer 2">
@@ -94,7 +92,7 @@
 </header>
 <div class="body">
     <div class="nav-up">
-        <a href="">
+        <a href="#top">
             <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         </a>
     </div>

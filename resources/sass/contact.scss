@@ -10,30 +10,64 @@
   font-size: $h3-size - 3px;
   color: $font_dark_color;
   direction: rtl;
+  @include super_small_screen{
+    padding: 10px 5%;
+    display: block;
+  }
   .contact-form{
     flex-basis: 40%;
     //border: 2px solid $btnHoverBgColor;
     box-shadow: 0 0 10px gray;
     border-radius: 10px;
     padding: 20px 1%;
+    @include super_small_screen{
+      padding: 10px 0;
+    }
     label{
       display: block;
       margin: 20px 0;
+      @include extra_small_screen{
+        font-size: $h4_size;
+      }
+      @include super_small_screen{
+        font-size: $h4_size - 2px;
+        margin: 10px 0;
+      }
     }
     input , textarea{
       border: 1px solid grey;
       border-radius: 10px;
       padding: 10px;
-      font-size: $h3_size - 4px;
+      font-size: $h4_size;
       font-family: $reg_font;
       width: 100%;
       resize: none;
+      @include semi_medium_screen{
+        background-color: rgba(255, 255, 255, 0.56);
+      }
+      @include super_small_screen{
+        font-size: $h4_size - 2px;
+      }
     }
     button{
       @include btnLinkStyle2;
       font-size: $h3_size - 2px;
       margin: 20px auto;
       display: block;
+      @include semi_medium_screen{
+        background-color: darken($btnBgColor2,5);
+        margin-top: 50px;
+      }
+      @include semi_small_screen{
+        width: 70%;
+      }
+      @include extra_small_screen{
+        font-size: $h4_size;
+        width: 70%;
+      }
+      @include super_small_screen{
+        margin: 5px auto;
+      }
       &:hover{
         background-color: transparent;
         color: $header_color2;
@@ -41,8 +75,19 @@
         @include hooverTransition
       }
     }
+    @include semi_medium_screen{
+      flex-basis: 80%;
+      background-image: url('../images/svg/contact.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+    }
   }
   .contact-image{
     flex-basis: 40%;
+    @include semi_medium_screen{
+      display: none;
+    }
   }
 }

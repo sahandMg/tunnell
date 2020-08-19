@@ -5,26 +5,27 @@
 //
 let header = document.querySelector('header');
 let headerHeight = document.querySelector('header').offsetHeight;
-document.querySelector('img[class="plugin"]').style.top = headerHeight;
-let pluginHeight = document.querySelector('img[class="plugin"]').height;
-document.querySelector('div[class="body"]').style.top += 1.7 * headerHeight +'px';
+let plugin = document.querySelector('img[class="plugin"]');
+console.log(headerHeight)
+document.querySelector('div[class="body"]').style.top = 130 * Math.log(headerHeight) +'px';
 let terminalWindow = document.querySelector('div[class="terminalBox"]');
 let webWindow = document.querySelector('img[class="web-window"]');
 let terminalCss = terminalWindow.getBoundingClientRect();
-let navPlugin = document.querySelector('img[class="nav-plugin"]');
 // NavBar
+let navPlugin = document.querySelector('img[class="nav-plugin"]');
 let navBar = document.querySelector('nav');
 let navPluginText = document.querySelector('img[class="nav-plugin-text"]');
 let regBtn = document.querySelector('a[class="reg"]');
 navPluginText.style.top = regBtn.getBoundingClientRect().bottom + 5 + 'px';
 navPluginText.style.left = regBtn.getBoundingClientRect().left + 'px';
 header.style.paddingTop = navBar.getBoundingClientRect().height/1.5+'px';
-navPlugin.style.top = navBar.getBoundingClientRect().height+'px';
+// plugin.style.top = headerHeight + header.style.paddingTop + 100 + 'px';
+navPlugin.style.top = navBar.getBoundingClientRect().height - 5+'px';
 window.addEventListener('scroll', function (event) {
     if(document.body.getBoundingClientRect().top < -headerHeight/20){
 
-        // navBar.style.backgroundImage = 'linear-gradient(45deg,rgb(40, 93, 109),#03A293)';
-        navBar.style.backgroundColor = '#03A293';
+        // navBar.style.backgroundColor = '#03A293';
+        navBar.style.backgroundColor = 'rgb(21, 157, 152)';
         navBar.style.transition = 'all 0.2s ease-in-out';
         navPlugin.style.opacity = '1';
         navPluginText.style.opacity = '1';
@@ -56,8 +57,8 @@ CommandWriter.prototype.run = function(callback){
     let interval = setInterval(()=>{
         if(i == this.commnadText.length){
             clearInterval(interval);
-
             let results1 = document.getElementById(this.resultId);
+            callback(200);
             stl = {
                 'opacity':'1',
                 'transition':'opacity ease-in 0.1s'
@@ -65,7 +66,6 @@ CommandWriter.prototype.run = function(callback){
             Object.entries(stl).forEach(css => {
                 results1.style[css[0]] = css[1]
             });
-            callback()
 
         }else{
 
@@ -75,21 +75,28 @@ CommandWriter.prototype.run = function(callback){
     },time);
 };
 
-let commnad1Text = '$ node app.js';
-let cWriter = new CommandWriter(100,commnad1Text,'command1','command1Result');
-cWriter.run(()=>{
-    let commnad2Text = '$ ./name http 8000';
-    let cWriter2 = new CommandWriter(100,commnad2Text,'command2','command2Result');
-    cWriter2.run(()=>{
-        webWindow.style.width = terminalCss.width+'px';
-        webWindow.style.left = terminalCss.left+'px';
-        let temp = terminalCss.top;
-        webWindow.style.top = 0+'px';
-        terminalWindow.style.transform = `translate(0,${webWindow.getBoundingClientRect().height/2}px)`;
-        webWindow.style.opacity = 1;
-        webWindow.style.transition = 'opacity 0.5s ease-in-out';
-        terminalWindow.style.transition = 'transform 1s ease-in-out';
-    });
+let command1Text = '$ node app.js';
+let cWriter = new CommandWriter(100,command1Text,'command1','command1Result');
+let command2Text = '$ ./name http 8000';
+let cWriter2 = new CommandWriter(100,command2Text,'command2','command2Result');
+new Promise((resolve,reject)=>{
+    cWriter.run(resolve);
+}).then((resp)=>{
+
+    return new Promise((resolve,reject)=>{
+        cWriter2.run(resolve);
+    })
+}).then((resp)=>{
+    webWindow.style.width = terminalCss.width+'px';
+    webWindow.style.left = terminalCss.left+'px';
+    let temp = terminalCss.top;
+    webWindow.style.top = 0+'px';
+    terminalWindow.style.transform = `translate(0,${webWindow.getBoundingClientRect().height/2}px)`;
+    webWindow.style.opacity = 1;
+    webWindow.style.transition = 'opacity 0.5s ease-in-out';
+    terminalWindow.style.transition = 'transform 1s ease-in-out';
+}).catch((err)=>{
+    console.log(err)
 });
 
 

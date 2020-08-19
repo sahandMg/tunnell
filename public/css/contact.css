@@ -17,14 +17,32 @@
   font-size: 15px;
   color: rgba(40, 40, 40, 0.9);
   direction: rtl; }
+  @media screen and (max-width: 368px) {
+    .contact-container {
+      max-width: 368px;
+      padding: 10px 5%;
+      display: block; } }
   .contact-container .contact-form {
     flex-basis: 40%;
     box-shadow: 0 0 10px gray;
     border-radius: 10px;
     padding: 20px 1%; }
+    @media screen and (max-width: 368px) {
+      .contact-container .contact-form {
+        max-width: 368px;
+        padding: 10px 0; } }
     .contact-container .contact-form label {
       display: block;
       margin: 20px 0; }
+      @media screen and (max-width: 480px) {
+        .contact-container .contact-form label {
+          max-width: 480px;
+          font-size: 14px; } }
+      @media screen and (max-width: 368px) {
+        .contact-container .contact-form label {
+          max-width: 368px;
+          font-size: 12px;
+          margin: 10px 0; } }
     .contact-container .contact-form input, .contact-container .contact-form textarea {
       border: 1px solid grey;
       border-radius: 10px;
@@ -33,6 +51,14 @@
       font-family: sans-r;
       width: 100%;
       resize: none; }
+      @media screen and (max-device-width: 1025px) {
+        .contact-container .contact-form input, .contact-container .contact-form textarea {
+          max-width: 1025px;
+          background-color: rgba(255, 255, 255, 0.56); } }
+      @media screen and (max-width: 368px) {
+        .contact-container .contact-form input, .contact-container .contact-form textarea {
+          max-width: 368px;
+          font-size: 12px; } }
     .contact-container .contact-form button {
       border: 2px solid white;
       color: white;
@@ -51,6 +77,24 @@
       font-size: 16px;
       margin: 20px auto;
       display: block; }
+      @media screen and (max-device-width: 1025px) {
+        .contact-container .contact-form button {
+          max-width: 1025px;
+          background-color: #03897c;
+          margin-top: 50px; } }
+      @media screen and (max-width: 568px) {
+        .contact-container .contact-form button {
+          max-width: 568px;
+          width: 70%; } }
+      @media screen and (max-width: 480px) {
+        .contact-container .contact-form button {
+          max-width: 480px;
+          font-size: 14px;
+          width: 70%; } }
+      @media screen and (max-width: 368px) {
+        .contact-container .contact-form button {
+          max-width: 368px;
+          margin: 5px auto; } }
       .contact-container .contact-form button:hover {
         background-color: transparent;
         color: #03A293;
@@ -60,5 +104,17 @@
         -ms-transition: all 0.5s ease-in;
         -o-transition: all 0.5s ease-in;
         transition: all 0.5s ease-in; }
+    @media screen and (max-device-width: 1025px) {
+      .contact-container .contact-form {
+        max-width: 1025px;
+        flex-basis: 80%;
+        background-image: url("../images/svg/contact.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; } }
   .contact-container .contact-image {
     flex-basis: 40%; }
+    @media screen and (max-device-width: 1025px) {
+      .contact-container .contact-image {
+        max-width: 1025px;
+        display: none; } }

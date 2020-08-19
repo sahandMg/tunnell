@@ -4,7 +4,14 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  margin: auto;
+  margin: 60px auto;
+  @include large_screen{
+    margin: 200px auto 100px auto;
+  }
+  @include extra_small_screen{
+
+    flex-direction: column;
+  }
 }
 .feature-box{
   flex-basis: 30%;
@@ -14,10 +21,16 @@
   display: flex;
   flex-direction: column;
   direction: rtl;
+  @include super_small_screen{
+    padding: 10px 2%;
+  }
   .feature-img {
     text-align: right;
     padding-right: 10%;
     width: 30%;
+    @include small_screen{
+      width: 25%;
+    }
     img{
       width: 100%;
     }
@@ -42,31 +55,48 @@
   margin: 20px auto;
   padding: 40px 0;
   border-radius: 300px;
-  background-image: url("../images/svg/bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../images/svg/bg.svg") no-repeat center;
   background-size: contain ;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @include super_small_screen{
+    background-size: 140%;
+  }
   img{
     margin-top: 40px;
     width: 50%;
+    @include medium_screen{
+      width: 70%;
+    }
+    @include extra_small_screen{
+      width: 80%;
+    }
+    @include super_small_screen{
+      width: 100%;
+    }
   }
   h2{
     font-family: $bold_font;
     font-size: $h2_size;
     color:$font_dark_color;
+    @include small_screen{
+      font-size: $h2_size - 5px;
+    }
+    @include extra_small_screen{
+      font-size: $h3_size - 4px;
+    }
   }
   h3{
     @extend h2;
     padding-top: 20px;
     font-size: $h3_size;
+    @include small_screen{
+      font-size: $h3_size - 5px;
+    }
+    @include extra_small_screen{
+      font-size: $h4_size - 2px;
+    }
   }
-}
-.nav-up{
-  transform: scale(2);
-  color: $bgColor2;
-
 }

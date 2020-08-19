@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.contact');
+    return view('layouts.footer');
 })->name('home');
 Route::get('contact',function(){})->name('contact');

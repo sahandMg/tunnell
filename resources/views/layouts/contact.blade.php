@@ -16,7 +16,7 @@
 
              <div class="form-group">
                  <label for="message">متن پیام</label>
-                 <textarea name="userMsg" id="message" cols="50" required   rows="10" placeholder="پیام شما"></textarea>
+                 <textarea name="userMsg" id="message" cols="50" required   rows="6" placeholder="پیام شما"></textarea>
              </div>
 
                 <button type="submit" class="btn btn-primary">ارسال </button>

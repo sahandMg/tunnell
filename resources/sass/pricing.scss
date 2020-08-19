@@ -7,6 +7,9 @@
   margin-top: 50px;
   padding: 20px 0;
   background-color: $bgColor3;
+  @include semi_medium_screen{
+    align-items: center;
+  }
 }
 .pricing-box{
   //width:40%;
@@ -17,15 +20,30 @@
   background: transparent;
   text-align: center;
   color: $font_light_color;
-  font-family: sans-b;
+  font-family: $bold_font;
   direction: rtl;
   box-shadow: 0 0 5px gray;
+@include extra_small_screen{
+  padding: 20px 3%;
+}
   .price{
     padding: 20px 1%;
     font-size: $h1_size - 5px;
+    @include semi_medium_screen{
+      font-size: $h2_size;
+    }
+    @include extra_small_screen{
+      font-size: $h2_size - 2px;
+    }
     .rate{
       margin-top: 10px;
       font-size: $h2_size;
+      @include semi_medium_screen{
+        font-size: $h2_size - 5px;
+      }
+      @include extra_small_screen{
+        font-size: $h3_size - 2px;
+      }
     }
   }
   .box-disc{
@@ -33,6 +51,13 @@
     p{
       font-size: $h3_size;
       margin: 20px 0;
+      @include semi_medium_screen{
+        font-size: $h3_size - 2px;
+      }
+      @include extra_small_screen{
+
+        font-size: $h3_size - 6px;
+      }
     }
     a{
       @include removeLinkStyle($font_light_color);
@@ -40,6 +65,13 @@
       display: inline-block;
       width: 50%;
       font-size: $h3_size;
+      @include semi_medium_screen{
+        font-size: $h3_size - 2px;
+      }
+      @include extra_small_screen{
+
+        font-size: $h3_size - 4px;
+      }
       margin-top: 20px;
       &:hover{
         background-color: $btnHoverBgColor;
@@ -48,14 +80,17 @@
     }
   }
 }
-.feature-box{
-
-}
 .pricing-container{
   position: relative;
 }
 .stopwatch{
   width: 15%;
   margin: 0 5%;
+  @include semi_medium_screen{
+    width: 25%;
+  }
+  @include super_small_screen{
+    display: none;
+  }
 
 }

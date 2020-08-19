@@ -11,7 +11,14 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  margin: auto; }
+  margin: 60px auto; }
+  @media screen and (min-width: 1400px) {
+    .features {
+      margin: 200px auto 100px auto; } }
+  @media screen and (max-width: 480px) {
+    .features {
+      max-width: 480px;
+      flex-direction: column; } }
 
 .feature-box {
   flex-basis: 30%;
@@ -21,10 +28,18 @@
   display: flex;
   flex-direction: column;
   direction: rtl; }
+  @media screen and (max-width: 368px) {
+    .feature-box {
+      max-width: 368px;
+      padding: 10px 2%; } }
   .feature-box .feature-img {
     text-align: right;
     padding-right: 10%;
     width: 30%; }
+    @media screen and (max-width: 667px) {
+      .feature-box .feature-img {
+        max-width: 667px;
+        width: 25%; } }
     .feature-box .feature-img img {
       width: 100%; }
   .feature-box .feature-title {
@@ -42,25 +57,51 @@
   margin: 20px auto;
   padding: 40px 0;
   border-radius: 300px;
-  background-image: url("../images/svg/bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../images/svg/bg.svg") no-repeat center;
   background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media screen and (max-width: 368px) {
+    .graphic {
+      max-width: 368px;
+      background-size: 140%; } }
   .graphic img {
     margin-top: 40px;
     width: 50%; }
+    @media screen and (max-width: 1224px) {
+      .graphic img {
+        max-width: 1224px;
+        width: 70%; } }
+    @media screen and (max-width: 480px) {
+      .graphic img {
+        max-width: 480px;
+        width: 80%; } }
+    @media screen and (max-width: 368px) {
+      .graphic img {
+        max-width: 368px;
+        width: 100%; } }
   .graphic h2, .graphic h3 {
     font-family: sans-b;
     font-size: 24px;
     color: rgba(40, 40, 40, 0.9); }
+    @media screen and (max-width: 667px) {
+      .graphic h2, .graphic h3 {
+        max-width: 667px;
+        font-size: 19px; } }
+    @media screen and (max-width: 480px) {
+      .graphic h2, .graphic h3 {
+        max-width: 480px;
+        font-size: 14px; } }
   .graphic h3 {
     padding-top: 20px;
     font-size: 18px; }
-
-.nav-up {
-  transform: scale(2);
-  color: whitesmoke; }
+    @media screen and (max-width: 667px) {
+      .graphic h3 {
+        max-width: 667px;
+        font-size: 13px; } }
+    @media screen and (max-width: 480px) {
+      .graphic h3 {
+        max-width: 480px;
+        font-size: 12px; } }

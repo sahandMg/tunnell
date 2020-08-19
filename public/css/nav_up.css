@@ -13,8 +13,18 @@
   right: 0;
   padding: 0 2%; }
   .nav-up i {
-    transform: scale(2);
+    transform: scale(3);
     color: #156d64; }
-    @media screen and (min-width: 1224px) {
+    @media screen and (max-width: 1224px) {
       .nav-up i {
+        max-width: 1224px;
         transform: scale(1.5); } }
+    @media screen and (max-device-width: 1025px) {
+      .nav-up i {
+        max-width: 1025px;
+        transform: scale(2);
+        padding: 0 5%; } }
+    @media screen and (max-width: 667px) {
+      .nav-up i {
+        max-width: 667px;
+        padding-right: 8% !important; } }
