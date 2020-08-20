@@ -170,5 +170,25 @@
   width: 6%;
   left: 0;
   right: 0;
-  margin: auto;
-  z-index: 6; }
+  margin: 0 auto;
+  z-index: 6;
+  animation-name: glup;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes glup {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 5px); }
+  100% {
+    transform: translate(0, 0); } }
+  @media screen and (max-device-width: 1025px) {
+    .burger-trigger {
+      max-width: 1025px;
+      transform: scale(0.8); } }
+  @media screen and (max-width: 368px) {
+    .burger-trigger {
+      max-width: 368px;
+      transform: scale(1.1); } }

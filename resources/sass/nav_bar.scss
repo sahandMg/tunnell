@@ -150,6 +150,30 @@
   width: 6%;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 auto;
   z-index: 6;
+  //transform:scale(1.5);
+  //opacity : 0;
+  //transition: all 1s ease-in-out;
+  animation-name : glup;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @keyframes glup {
+    0% {
+      transform:translate(0,0);
+    }
+    50%{
+      transform:translate(0,5px);
+    }
+    100%{
+      transform:translate(0,0);
+    }
+  }
+  @include semi_medium_screen{
+    transform: scale(0.8);
+  }
+  @include super_small_screen{
+    transform: scale(1.1);
+  }
 }

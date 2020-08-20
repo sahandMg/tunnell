@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.nav')
 @section('features')
     {{--<h2 class="section-title">ویژگی های اپ</h2>--}}
     <div id="#features" class="features">

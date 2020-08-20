@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 563.312 71.048">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 563.312 43.771">
   <defs>
     <style>
       .cls-1 {
-        fill: #013e38;
+        fill: #023e38;
       }
     </style>
   </defs>
   <title>burgerPlugin</title>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
-      <path class="cls-1" d="M0,14.273s256.833,127.744,563.312,0V0H0Z"/>
+      <path class="cls-1" d="M0,8.793s256.833,78.7,563.312,0V0H0Z"/>
     </g>
   </g>
 </svg>

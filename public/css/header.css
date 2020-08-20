@@ -54,6 +54,19 @@ header {
 .wrap {
   border-left: 0.2em solid #fff; }
 
+.typewiter-container {
+  position: relative; }
+  @media screen and (max-device-width: 1025px) {
+    .typewiter-container {
+      max-width: 1025px;
+      margin: 20px 0 30px 0; } }
+
+.typewrite {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
 .terminal-figure {
   padding: 20px 1%;
   flex-basis: 40%;
@@ -71,7 +84,9 @@ header {
 .web-window {
   position: absolute;
   opacity: 0;
-  z-index: 0; }
+  z-index: 0;
+  left: 0;
+  right: 0; }
   @media screen and (max-device-width: 1025px) {
     .web-window {
       max-width: 1025px;
@@ -162,106 +177,6 @@ header {
       .header-description h3 {
         max-width: 480px;
         font-size: 12px; } }
-
-.plugin {
-  width: 100%;
-  position: absolute;
-  z-index: -2; }
-
-.nav-plugin {
-  width: 100%;
-  position: absolute;
-  z-index: -2;
-  padding: 0;
-  opacity: 0; }
-  @media screen and (max-device-width: 1025px) {
-    .nav-plugin {
-      max-width: 1025px;
-      display: none; } }
-
-.nav-bar {
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  width: 100%;
-  background-color: transparent;
-  display: flex; }
-  @media screen and (max-device-width: 1025px) {
-    .nav-bar {
-      max-width: 1025px;
-      display: none; } }
-
-.nav-plugin-text {
-  position: absolute;
-  width: 8%;
-  z-index: 5;
-  opacity: 0; }
-  @media screen and (max-device-width: 1025px) {
-    .nav-plugin-text {
-      max-width: 1025px;
-      display: none; } }
-
-.nav-ul {
-  flex-basis: 80%;
-  list-style: none;
-  display: flex;
-  font-family: sans-b;
-  font-size: 14px;
-  padding: 30px 5%;
-  direction: rtl; }
-  .nav-ul li {
-    margin-left: 5%;
-    flex-basis: 7%;
-    text-align: center; }
-  .nav-ul a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding-bottom: 20px;
-    width: 100%;
-    border-bottom: 2px solid transparent; }
-    .nav-ul a:hover {
-      border-bottom: 2px solid white;
-      -webkit-transition: all 0.5s ease-in;
-      -moz-transition: all 0.5s ease-in;
-      -ms-transition: all 0.5s ease-in;
-      -o-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in; }
-
-.active {
-  border-bottom: 2px solid white !important; }
-
-.auth-ul {
-  flex-basis: 20%;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 14px;
-  padding: 30px 5px; }
-  .auth-ul li {
-    margin: 0 2%;
-    flex-basis: 100%; }
-  .auth-ul .reg, .auth-ul .login {
-    display: inline-block;
-    font-family: sans-b;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px 2%;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in; }
-    .auth-ul .reg:hover, .auth-ul .login:hover {
-      background-color: #03A293;
-      -webkit-transition: all 0.5s ease-in;
-      -moz-transition: all 0.5s ease-in;
-      -ms-transition: all 0.5s ease-in;
-      -o-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in; }
 
 .cta {
   text-decoration: none;

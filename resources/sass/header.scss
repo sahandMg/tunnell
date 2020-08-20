@@ -56,6 +56,19 @@ header{
 .wrap{
   border-left: 0.2em solid #fff
 }
+.typewiter-container{
+  position: relative;
+  @include semi_medium_screen{
+
+    margin: 20px 0 30px 0;
+  }
+}
+.typewrite{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 .terminal-figure{
   padding: 20px 1%;
   flex-basis: 40%;
@@ -74,6 +87,8 @@ header{
   position: absolute;
   opacity: 0;
   z-index: 0;
+  left: 0;
+  right: 0;
   @include semi_medium_screen{
     margin-top: 50px;
   }

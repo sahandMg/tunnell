@@ -87,6 +87,13 @@
       }
       img{
         width: 7%;
+        margin: 0 2%;
+        @include semi_medium_screen{
+          width: 15%;
+        }
+        @include extra_small_screen{
+          width: 10%;
+        }
       }
       a{
         font-size: 16px;

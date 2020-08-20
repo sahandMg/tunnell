@@ -47,7 +47,7 @@
 
       .cls-8 {
         font-size: 22px;
-        font-family: Arial-BoldMT, Arial;
+        font-family: IRANSans-Bold, IRANSans;
       }
     </style>
   </defs>
@@ -73,7 +73,7 @@
                 <text class="cls-7" transform="translate(59.746 29.261)">http://mamad.name.io</text>
               </g>
             </g>
-            <text class="cls-8" transform="translate(264.876 79.447)">!<tspan x="7.326" y="0">به سایت ممد خوش آمدید </tspan></text>
+            <text class="cls-8" transform="translate(156.816 80.319)">!<tspan x="5.538" y="0">به سایت ممد خوش‌آمدید</tspan></text>
           </g>
         </g>
       </g>

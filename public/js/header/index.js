@@ -15,6 +15,7 @@ let navPlugin = document.querySelector('img[class="nav-plugin"]');
 let navBar = document.querySelector('nav');
 let navPluginText = document.querySelector('img[class="nav-plugin-text"]');
 let regBtn = document.querySelector('a[class="reg"]');
+
 navPluginText.style.top = regBtn.getBoundingClientRect().bottom + 5 + 'px';
 navPluginText.style.left = regBtn.getBoundingClientRect().left + 'px';
 header.style.paddingTop = navBar.getBoundingClientRect().height/1.5+'px';
@@ -92,7 +93,7 @@ new Promise((resolve,reject)=>{
     webWindow.style.top = 0+'px';
     terminalWindow.style.transform = `translate(0,${webWindow.getBoundingClientRect().height/2}px)`;
     webWindow.style.opacity = 1;
-    webWindow.style.transition = 'opacity 0.5s ease-in-out';
+    webWindow.style.transition = 'block 0.5s ease-in-out';
     terminalWindow.style.transition = 'transform 1s ease-in-out';
 }).catch((err)=>{
     console.log(err)
@@ -123,7 +124,8 @@ TxtType.prototype.tick = function() {
     }
 
     document.querySelector('span[class="wrap"]').innerHTML = this.txt;
-
+    // console.log(document.querySelector('h2[class="typewrite"]').offsetHeight=64);
+    // document.querySelector('h2[class="typewrite"]').style.height = 64+'px';
     var that = this;
     var delta = 200 - Math.random() * 200;
 

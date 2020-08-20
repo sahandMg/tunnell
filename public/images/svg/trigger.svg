@@ -17,8 +17,31 @@
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
       <g>
-        <circle class="cls-1" cx="31.311" cy="31.311" r="28.811"/>
-        <path class="cls-2" d="M33.358,37.171a2.364,2.364,0,0,1-4.095,0l-2.7-4.678-2.7-4.679a2.363,2.363,0,0,1,2.047-3.545h10.8a2.364,2.364,0,0,1,2.048,3.545l-2.7,4.679Z"/>
+        <g>
+          <circle class="cls-1" cx="31.311" cy="31.311" r="28.811"/>
+          <path class="cls-2" d="M33.358,37.171a2.364,2.364,0,0,1-4.095,0l-2.7-4.678-2.7-4.679a2.363,2.363,0,0,1,2.047-3.545h10.8a2.364,2.364,0,0,1,2.048,3.545l-2.7,4.679Z"/>
+          <!--<animateTransform attributeName="transform" type="translate" dur="4s" from="31.311,31.311" to="15,65" repeatCount="indefinite"></animateTransform>-->
+          <!--<animateTransform attributeType="XML" attributeName="transform" type="scale" additive="sum" from="0.5" to="1" dur="1s" repeatCount="indefinite" ></animateTransform>-->
+          <!--<animate attributeType="css" attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"></animate>-->
+        </g>
+        <!--<circle class="cls-1" cx="31.311" cy="31.311" r="28.811">-->
+          <!--<animateTransform attributeType="XML" attributeName="transform" type="translate" values="0,0;-31.311,-31.311;0,0;31.311,31.311;0,0" dur="1s" repeatCount="indefinite" ></animateTransform>-->
+
+        <!--</circle>-->
+
+
+
+        <!--<rect id="R" width="100%" height="100%" rx="10%" ry="15%" fill="red"></rect>-->
+        <!-- Applying multiple transforms-->
+
+        <!--<circle r="25" cx="50" cy="50" fill="gray">-->
+          <!--<animateTransform attributeName="transform" type="translate" dur="4s" values="0,0;-50,-50;0,0;50,50;0,0" repeatCount="indefinite"></animateTransform>-->
+          <!--<animateTransform attributeName="transform" additive="sum" type="scale" dur="4s" values="1; 2; 1; 0; 1" repeatCount="indefinite"></animateTransform>-->
+<!---->
+        <!--</circle>-->
+
+        <!--<rect id="R" rx="10%" ry="15%" y="0%" x="0%" width="100%" height="100%" fill="none" stroke="black" stroke-width="8%"></rect>-->
+
       </g>
     </g>
   </g>

@@ -20,37 +20,8 @@
     </style>
 </head>
 <body onclick="closeMenu()">
-<nav id="#top" class="nav-bar">
-    <ul class="auth-ul">
-        <li><a class="login" href="">ورود</a></li>
-        <li><a class="reg" href="">ثبت نام</a></li>
-    </ul>
-    <ul class="nav-ul">
-        <li><a class="active" href="{{route('home')}}">تونلو</a></li>
-        <li><a href="#features">قابلیت ها</a></li>
-        <li><a href="#pricing">قیمت</a></li>
-        <li><a href="">راه‌حل‌ ها</a></li>
-        <li><a href="">آموزش ها</a></li>
-    </ul>
-    <img class="nav-plugin-text" src="{{URL::asset('images/svg/text.svg')}}" alt="">
-    <img class="nav-plugin" src="{{URL::asset('images/svg/navPlugin2.svg')}}" alt="">
-</nav>
-<nav class="burger-nav">
 
-    <ul class="burger-nav-ul">
-        <li><a class="active" href="{{route('home')}}">تونلو</a></li>
-        <li><a href="#features">قابلیت ها</a></li>
-        <li><a href="#pricing">قیمت</a></li>
-        <li><a href="">راه‌حل‌ ها</a></li>
-        <li><a href="">آموزش ها</a></li>
-        <li><a class="login" href="">ورود</a></li>
-        <li><a class="reg" href="">ثبت نام</a></li>
-    </ul>
-    <img onclick="triggerMenu()" class="burger-trigger" src="{{URL::asset('images/svg/trigger.svg')}}" alt="">
-    <img class="burger-plugin-text" src="{{URL::asset('images/svg/burgerText.svg')}}" alt="">
-    <img class="burger-plugin" src="{{URL::asset('images/svg/burgerPlugin.svg')}}" alt="">
-</nav>
-
+@yield('nav')
 <header class="body-header">
     <div class="header-container">
         <div class="terminal-figure">
@@ -93,10 +64,12 @@
         </div>
         <div class="header-description">
             <h1>! تونلو، تونلی در دل دنیا، برای شما</h1>
+            <div class="typewiter-container">
+                <h2 class="typewrite" data-type='[ "با تونلو هرجا که هستی به هرچی که داری تونل بزن", "تونلو رو نصب کن کیفش رو ببر"]' data-period="2000">
+                    <span class="wrap"></span>
+                </h2>
+            </div>
             <br>
-            <h2 class="typewrite" data-type='[ "با تونلو هرجا که هستی به هرچی که داری تونل بزن", "تونلو رو نصب کن کیفش رو ببر"]' data-period="2000">
-                <span class="wrap"></span>
-            </h2>
             <br>
             <h3>Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.</h3>
             <br>
