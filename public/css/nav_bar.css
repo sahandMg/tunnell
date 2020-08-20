@@ -1,0 +1,174 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+.plugin {
+  width: 100%;
+  position: absolute;
+  z-index: -2; }
+
+.nav-plugin {
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  padding: 0;
+  opacity: 0; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-plugin {
+      max-width: 1025px;
+      display: none; } }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: transparent;
+  display: flex; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-bar {
+      max-width: 1025px;
+      display: none; } }
+
+.nav-plugin-text {
+  position: absolute;
+  width: 8%;
+  z-index: 5;
+  opacity: 0; }
+  @media screen and (max-device-width: 1025px) {
+    .nav-plugin-text {
+      max-width: 1025px;
+      display: none; } }
+
+.nav-ul {
+  flex-basis: 80%;
+  list-style: none;
+  display: flex;
+  font-family: sans-b;
+  font-size: 14px;
+  padding: 30px 5%;
+  direction: rtl; }
+  .nav-ul li {
+    margin-left: 5%;
+    flex-basis: 7%;
+    text-align: center; }
+  .nav-ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 2px solid transparent; }
+    .nav-ul a:hover {
+      border-bottom: 2px solid white;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+
+.active {
+  border-bottom: 2px solid white !important; }
+
+.auth-ul {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding: 30px 5px; }
+  .auth-ul li {
+    margin: 0 2%;
+    flex-basis: 100%; }
+  .auth-ul .reg, .auth-ul .login {
+    display: inline-block;
+    font-family: sans-b;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 2%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .auth-ul .reg:hover, .auth-ul .login:hover {
+      background-color: #03A293;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+
+.burger-nav {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  padding: 10px 0;
+  background-color: #013e38;
+  width: 100%;
+  font-family: sans-b;
+  font-size: 18px;
+  display: none; }
+  @media screen and (max-device-width: 1025px) {
+    .burger-nav {
+      max-width: 1025px;
+      display: block; } }
+  @media screen and (max-width: 568px) {
+    .burger-nav {
+      max-width: 568px;
+      font-size: 16px; } }
+  @media screen and (max-width: 480px) {
+    .burger-nav {
+      max-width: 480px;
+      font-size: 14px; } }
+  .burger-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .burger-nav li {
+    padding: 20px 0;
+    width: 50%;
+    margin: auto; }
+    @media screen and (max-width: 568px) {
+      .burger-nav li {
+        max-width: 568px;
+        padding: 15px 0; } }
+  .burger-nav a {
+    text-decoration: none;
+    color: white; }
+    .burger-nav a:hover {
+      color: #f7b51b;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+
+.burger-plugin {
+  position: absolute;
+  z-index: 5;
+  width: 100%; }
+
+.burger-plugin-text {
+  position: absolute;
+  z-index: 6;
+  width: 20%; }
+  @media screen and (max-width: 568px) {
+    .burger-plugin-text {
+      max-width: 568px;
+      width: 25%; } }
+
+.burger-trigger {
+  position: absolute;
+  width: 6%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 6; }

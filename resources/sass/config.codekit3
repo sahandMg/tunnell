@@ -113,6 +113,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/nav_bar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/toonello\/public\/css\/nav_bar.css",
+		"oF": 6,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/nav_up.scss": {
 		"aP": 0,
 		"bl": 0,

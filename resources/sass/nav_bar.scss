@@ -1,0 +1,155 @@
+@import "mixins";
+.plugin{
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+.nav-plugin{
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  padding: 0;
+  opacity: 0;
+  @include semi_medium_screen{
+    display: none;
+  }
+}
+.nav-bar{
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  //padding: 0 1%;
+  //background-color: $nav_color;
+  background-color: transparent;
+  display: flex;
+  @include semi_medium_screen{
+    display: none;
+  }
+}
+.nav-plugin-text{
+  position: absolute;
+  width: 8%;
+  z-index: 5;
+  opacity: 0;
+  @include semi_medium_screen{
+    display: none;
+  }
+}
+.nav-ul{
+  flex-basis: 80%;
+  list-style: none;
+  display: flex;
+  font-family: $bold_font;
+  font-size: 14px;
+  padding: $nav_items_top_padding 5%;
+  direction: rtl;
+  li{
+    margin-left: 5%;
+    flex-basis: 7%;
+    text-align: center;
+  }
+  a{
+    display: inline-block;
+    @include removeLinkStyle($font_light_color);
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    &:hover{
+      border-bottom: 2px solid $nav_hover_color;
+      @include hooverTransition()
+    }
+  }
+}
+.active{
+  border-bottom: 2px solid $nav_hover_color!important;
+}
+.auth-ul{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding: $nav_items_top_padding 5px;
+
+  li{
+    margin:0 2%;
+    flex-basis: 100%;
+
+  }
+  .reg , .login{
+
+    display: inline-block;
+    font-family: $bold_font;
+    @include removeLinkStyle($font_light_color);
+    @include btnLinkStyle1;
+    &:hover{
+      background-color: $btnHoverBgColor;
+      @include hooverTransition()
+    }
+  }
+}
+
+.burger-nav{
+
+  position: fixed;
+  z-index: 5;
+  top:0;
+  padding: 10px 0;
+  background-color: darken($header_color2,20);
+  width: 100%;
+  font-family: $bold_font;
+  font-size: $h3_size;
+  display: none;
+  @include semi_medium_screen{
+    display: block;
+  }
+  @include semi_small_screen{
+    font-size: $h3_size - 2px;
+  }
+  @include extra_small_screen{
+    font-size: $h4_size;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  li{
+    //margin-top: 10px;
+    padding: 20px 0;
+    width: 50%;
+    margin: auto;
+    @include semi_small_screen{
+      padding: 15px 0;
+    }
+  }
+  a{
+    @include removeLinkStyle($font_light_color);
+    &:hover{
+      color: $link_hover_color;
+      @include hooverTransition
+    }
+  }
+}
+
+.burger-plugin{
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+}
+.burger-plugin-text{
+  position: absolute;
+  z-index: 6;
+  width: 20%;
+  @include semi_small_screen{
+    width: 25%;
+  }
+}
+.burger-trigger{
+  position: absolute;
+  width: 6%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 6;
+}

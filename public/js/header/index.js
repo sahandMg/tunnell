@@ -6,7 +6,6 @@
 let header = document.querySelector('header');
 let headerHeight = document.querySelector('header').offsetHeight;
 let plugin = document.querySelector('img[class="plugin"]');
-console.log(headerHeight)
 document.querySelector('div[class="body"]').style.top = 130 * Math.log(headerHeight) +'px';
 let terminalWindow = document.querySelector('div[class="terminalBox"]');
 let webWindow = document.querySelector('img[class="web-window"]');

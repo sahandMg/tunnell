@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{URL::asset('css/reset.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/header.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/nav_bar.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/body.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/sectioner.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/pricing.css')}}">
@@ -18,7 +19,7 @@
 
     </style>
 </head>
-<body>
+<body onclick="closeMenu()">
 <nav id="#top" class="nav-bar">
     <ul class="auth-ul">
         <li><a class="login" href="">ورود</a></li>
@@ -34,6 +35,22 @@
     <img class="nav-plugin-text" src="{{URL::asset('images/svg/text.svg')}}" alt="">
     <img class="nav-plugin" src="{{URL::asset('images/svg/navPlugin2.svg')}}" alt="">
 </nav>
+<nav class="burger-nav">
+
+    <ul class="burger-nav-ul">
+        <li><a class="active" href="{{route('home')}}">تونلو</a></li>
+        <li><a href="#features">قابلیت ها</a></li>
+        <li><a href="#pricing">قیمت</a></li>
+        <li><a href="">راه‌حل‌ ها</a></li>
+        <li><a href="">آموزش ها</a></li>
+        <li><a class="login" href="">ورود</a></li>
+        <li><a class="reg" href="">ثبت نام</a></li>
+    </ul>
+    <img onclick="triggerMenu()" class="burger-trigger" src="{{URL::asset('images/svg/trigger.svg')}}" alt="">
+    <img class="burger-plugin-text" src="{{URL::asset('images/svg/burgerText.svg')}}" alt="">
+    <img class="burger-plugin" src="{{URL::asset('images/svg/burgerPlugin.svg')}}" alt="">
+</nav>
+
 <header class="body-header">
     <div class="header-container">
         <div class="terminal-figure">
@@ -72,7 +89,6 @@
                     </g>
                 </svg>
             </div>
-
             <img class="web-window" src="{{URL::asset('images/svg/web.svg')}}" alt="">
         </div>
         <div class="header-description">
@@ -103,6 +119,7 @@
 @yield('contact')
 @yield('footer')
 </div>
+<script src="{{URL::asset('js/navbar/index.js')}}"></script>
 <script src="{{URL::asset('js/header/index.js')}}"></script>
 <script src="{{URL::asset('js/graphics/index.js')}}"></script>
 <script src="{{URL::asset('js/pricing/index.js')}}"></script>

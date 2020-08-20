@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.621 62.621">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffde17;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #ffde17;
+      }
+    </style>
+  </defs>
+  <title>trigger</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <circle class="cls-1" cx="31.311" cy="31.311" r="28.811"/>
+        <path class="cls-2" d="M33.358,37.171a2.364,2.364,0,0,1-4.095,0l-2.7-4.678-2.7-4.679a2.363,2.363,0,0,1,2.047-3.545h10.8a2.364,2.364,0,0,1,2.048,3.545l-2.7,4.679Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

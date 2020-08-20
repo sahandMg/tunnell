@@ -12,6 +12,10 @@
 
     flex-direction: column;
   }
+  @include super_small_screen{
+
+    margin: 10px auto;
+  }
 }
 .feature-box{
   flex-basis: 30%;

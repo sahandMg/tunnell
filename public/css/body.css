@@ -19,6 +19,10 @@
     .features {
       max-width: 480px;
       flex-direction: column; } }
+  @media screen and (max-width: 368px) {
+    .features {
+      max-width: 368px;
+      margin: 10px auto; } }
 
 .feature-box {
   flex-basis: 30%;
