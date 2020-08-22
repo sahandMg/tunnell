@@ -1,9 +1,19 @@
 @import "../mixins";
 .notif-box{
   position: absolute;
-  bottom: 5px;
+  bottom: auto;
   left: 5px;
   width: 20%;
+  @include semi_medium_screen{
+    width: 30%;
+  }
+  @include semi_medium_screen{
+    width: 30%;
+    top: 10px;
+  }
+  @include small_screen{
+    width: 70%;
+  }
   .notif{
     position: relative;
     background-color: $notif_bg_color;
@@ -16,6 +26,9 @@
     margin-top: 10px;
     border-radius: 10px;
     transform: translate(-500px,0);
+    @include extra_small_screen{
+      padding: 5px 2% 10px 2%;
+    }
     p{
       margin-top: 5px;
       padding: 5px;

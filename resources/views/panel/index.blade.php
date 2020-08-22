@@ -1,9 +1,5 @@
 @extends('panel.master.layout')
 @section('bodyContent')
-            /*
-            <!-- HEADER DESKTOP--> */
-            /*
-            <!-- MAIN CONTENT--> */
 
     <div class="section__content section__content--p30">
         <div class="container-fluid">
@@ -21,21 +17,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($user->tokens as $token)
                                 <tr class="text-center">
-                                    <td>asdsduop54df8</td>
-                                    <td>فعال</td>
-                                    <td>192.168.1.4:22</td>
+                                    <td>{{$token->code}}</td>
+                                    <td>{{$token->status == 1?'فعال':'خاموش'}}</td>
+                                    <td>{{$token->address}}</td>
                                 </tr>
-                                <tr class="text-center">
-                                    <td>asdsduop54df8</td>
-                                    <td>خاموش</td>
-                                    <td>192.168.1.4:22</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>asdsduop54df8</td>
-                                    <td>فعال</td>
-                                    <td>192.168.1.4:22</td>
-                                </tr>
+                            @endforeach
+
                             </tbody>
                         </table>
                     </div>

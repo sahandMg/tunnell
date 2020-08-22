@@ -26,21 +26,13 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($user->transactions as $transaction)
                                 <tr class="text-center">
-                                    <td>10000 تومان</td>
+                                    <td><span>{{$transaction->amount}}</span> تومان</td>
                                     <td>شارژ اکانت</td>
-                                    <td style="color: green;">موفق</td>
+                                    <td style="{{$transaction->status == 'paid'?'color:green':($transaction->status == 'canceled'?'color:gray':'color:red')}}">{{$transaction->status == 'paid'?'موفق':($transaction->status == 'canceled'?'لغو':'ناموفق')}}</td>
                                 </tr>
-                                <tr class="text-center">
-                                    <td>10000 تومان</td>
-                                    <td>شارژ اکانت</td>
-                                    <td style="color: red;">ناموفق</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>10000 تومان</td>
-                                    <td>شارژ اکانت</td>
-                                    <td style="color: green;">موفق</td>
-                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

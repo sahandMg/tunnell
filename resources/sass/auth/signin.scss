@@ -17,6 +17,9 @@ html, body {
     font-size: $h2_size - 2px;
   }
 }
+.main-container{
+  position: relative;
+}
 .login-container{
   display: flex;
   //position: absolute;
@@ -25,7 +28,7 @@ html, body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin: 5% auto;
+  margin: 5% auto 0 auto;
   font-family: $bold_font;
   font-size: $h3-size - 3px;
   color: $font_dark_color;
@@ -36,7 +39,7 @@ html, body {
   @include super_small_screen{
     padding: 10px 5%;
     //top: 60%;
-    //display: block;
+    display: block;
   }
   .login-box {
     flex-basis: 40%;
@@ -146,14 +149,6 @@ html, body {
         @include hooverTransition
       }
     }
-    //@include semi_medium_screen{
-    //  flex-basis: 80%;
-    //  background-image: url('../images/svg/contact.svg');
-    //  background-repeat: no-repeat;
-    //  background-size: contain;
-    //  background-position: center;
-    //
-    //}
   }
   .login-image{
     flex-basis: 40%;

@@ -69,7 +69,7 @@ html, body {
       .login-container .login-box {
         max-width: 368px;
         padding: 10px 0; } }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .login-container .login-box {
         max-width: 1025px;
         flex-basis: 80%; } }
@@ -132,7 +132,7 @@ html, body {
       .login-container .login-image, .login-container .fpass-image {
         max-width: 1399px;
         flex-basis: 50%; } }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .login-container .login-image, .login-container .fpass-image {
         max-width: 1025px;
         display: none; } }

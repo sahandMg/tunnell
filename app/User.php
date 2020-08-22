@@ -38,9 +38,12 @@ class User extends Authenticatable
     ];
 
     public function tokens(){
-        return $this->hasMany('tokens');
+        return $this->hasMany(Token::class);
     }
     public function wallet(){
         return $this->hasOne(Wallet::class);
+    }
+    public function transactions(){
+        return $this->hasMany(Transactions::class);
     }
 }

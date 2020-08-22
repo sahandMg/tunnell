@@ -16,10 +16,6 @@ class UserObserver
      */
     public function created(User $user)
     {
-        $token = new Token();
-        $token->code = strtoupper(uniqid());
-        $token->user_id = $user->id;
-        $token->save();
         $wallet = new Wallet();
         $wallet->charge = env('GIFT');
         $wallet->user_id = $user->id;

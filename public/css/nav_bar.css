@@ -17,7 +17,7 @@
   z-index: -2;
   padding: 0;
   opacity: 0; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .nav-plugin {
       max-width: 1025px;
       display: none; } }
@@ -29,7 +29,7 @@
   width: 100%;
   background-color: transparent;
   display: flex; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .nav-bar {
       max-width: 1025px;
       display: none; } }
@@ -39,7 +39,7 @@
   width: 8%;
   z-index: 5;
   opacity: 0; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .nav-plugin-text {
       max-width: 1025px;
       display: none; } }
@@ -117,7 +117,7 @@
   font-family: sans-b;
   font-size: 18px;
   display: none; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .burger-nav {
       max-width: 1025px;
       display: block; } }
@@ -185,7 +185,7 @@
     transform: translate(0, 5px); }
   100% {
     transform: translate(0, 0); } }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .burger-trigger {
       max-width: 1025px;
       transform: scale(0.8); } }

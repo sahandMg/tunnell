@@ -56,7 +56,7 @@ header {
 
 .typewiter-container {
   position: relative; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .typewiter-container {
       max-width: 1025px;
       margin: 20px 0 30px 0; } }
@@ -72,7 +72,7 @@ header {
   flex-basis: 40%;
   text-align: center;
   position: relative; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .terminal-figure {
       max-width: 1025px; } }
 
@@ -87,7 +87,7 @@ header {
   z-index: 0;
   left: 0;
   right: 0; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .web-window {
       max-width: 1025px;
       margin-top: 50px; } }
@@ -95,7 +95,7 @@ header {
 .terminalBox {
   position: relative;
   z-index: 1; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .terminalBox {
       max-width: 1025px;
       width: 60%; } }
@@ -113,7 +113,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 70px 2%; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .header-container {
       max-width: 1025px;
       flex-direction: column-reverse;
@@ -138,14 +138,14 @@ header {
       .header-description h1 {
         max-width: 1224px;
         font-size: 38px; } }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .header-description h1 {
         max-width: 1025px; } }
     @media screen and (max-width: 667px) {
       .header-description h1 {
         max-width: 667px;
         font-size: 38px; } }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .header-description h1 {
         max-width: 1025px;
         font-size: 30px; } }
@@ -199,7 +199,7 @@ header {
     .cta {
       max-width: 1224px;
       font-size: 22px; } }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .cta {
       max-width: 1025px;
       font-size: 20px; } }

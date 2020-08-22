@@ -95,7 +95,7 @@
       .footer-container .footer-contact .contact-item img {
         width: 7%;
         margin: 0 2%; }
-        @media screen and (max-device-width: 1025px) {
+        @media screen and (max-width: 1025px) {
           .footer-container .footer-contact .contact-item img {
             max-width: 1025px;
             width: 15%; } }

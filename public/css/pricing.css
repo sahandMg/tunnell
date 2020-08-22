@@ -10,11 +10,11 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 50px;
   padding: 20px 0;
   background-color: #285d6d; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .pricing {
       max-width: 1025px;
       align-items: center; } }
@@ -36,7 +36,7 @@
   .pricing-box .price {
     padding: 20px 1%;
     font-size: 37px; }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .pricing-box .price {
         max-width: 1025px;
         font-size: 24px; } }
@@ -47,7 +47,7 @@
     .pricing-box .price .rate {
       margin-top: 10px;
       font-size: 24px; }
-      @media screen and (max-device-width: 1025px) {
+      @media screen and (max-width: 1025px) {
         .pricing-box .price .rate {
           max-width: 1025px;
           font-size: 19px; } }
@@ -58,7 +58,7 @@
   .pricing-box .box-disc p {
     font-size: 18px;
     margin: 20px 0; }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .pricing-box .box-disc p {
         max-width: 1025px;
         font-size: 16px; } }
@@ -84,7 +84,7 @@
     width: 50%;
     font-size: 18px;
     margin-top: 20px; }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .pricing-box .box-disc a {
         max-width: 1025px;
         font-size: 16px; } }
@@ -106,7 +106,7 @@
 .stopwatch {
   width: 15%;
   margin: 0 5%; }
-  @media screen and (max-device-width: 1025px) {
+  @media screen and (max-width: 1025px) {
     .stopwatch {
       max-width: 1025px;
       width: 25%; } }

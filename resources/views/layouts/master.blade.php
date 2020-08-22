@@ -73,7 +73,7 @@
             <br>
             <h3>Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.</h3>
             <br>
-            <a class="cta" href="">! دریافت اشتراک رایگان</a>
+            <a class="cta" href="#pricing">! دریافت اشتراک رایگان</a>
         </div>
     </div>
 
@@ -92,6 +92,12 @@
 @yield('contact')
 @yield('footer')
 </div>
+<script>
+    let scrollDown = function () {
+        window.scrollY = 200;
+        console.log(window.scrollingThreshold)
+    };
+</script>
 <script src="{{URL::asset('js/navbar/index.js')}}"></script>
 <script src="{{URL::asset('js/header/index.js')}}"></script>
 <script src="{{URL::asset('js/graphics/index.js')}}"></script>

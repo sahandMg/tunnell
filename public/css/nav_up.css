@@ -19,7 +19,7 @@
       .nav-up i {
         max-width: 1224px;
         transform: scale(1.5); } }
-    @media screen and (max-device-width: 1025px) {
+    @media screen and (max-width: 1025px) {
       .nav-up i {
         max-width: 1025px;
         transform: scale(2);

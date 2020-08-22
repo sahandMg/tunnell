@@ -8,7 +8,7 @@
         <ul class="nav-ul">
             <li><a class="active" href="{{route('home')}}">تونلو</a></li>
             <li><a href="#features">قابلیت ها</a></li>
-            <li><a href="#pricing">قیمت</a></li>
+            <li onclick="scrollDown()"><a href="#pricing">قیمت</a></li>
             <li><a href="">راه‌حل‌ ها</a></li>
             <li><a href="">آموزش ها</a></li>
         </ul>

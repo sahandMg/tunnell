@@ -19,6 +19,7 @@ class Signin implements Responsable
 
                 session()->flash('user',Auth::user());
                 session()->flash('message','لطفا ایمیل خود را تایید نمایید');
+                Auth::logout();
                 return redirect()->route('confirmation');
             }
 

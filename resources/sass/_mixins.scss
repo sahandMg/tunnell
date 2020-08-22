@@ -61,7 +61,7 @@
 @mixin semi_medium_screen{
 
   //@media screen and (min-width: 768px) and (max-device-width : 1024px)  {
-  @media screen and (max-device-width : 1025px)  {
+  @media screen and (max-width : 1025px)  {
     max-width: 1025px;
     @content ;
   }

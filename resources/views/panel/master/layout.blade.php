@@ -164,7 +164,7 @@
                                             </div>
                                             <div class="account-dropdown__item">
                                                 <a
-                                                        href="{{route('TransactionsList',['locale'=>App::getLocale()])}}">
+                                                        href="{{route('billing',['locale'=>App::getLocale()])}}">
                                                     <i class="zmdi zmdi-money-box"></i>پرداخت ها</a>
                                             </div>
                                         </div>
