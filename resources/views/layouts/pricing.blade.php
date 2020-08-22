@@ -10,7 +10,7 @@
             <div class="box-disc">
                 <p>بدون محدودیت استفاده از اپ</p>
                 <p> ۵۰۰۰ هزارتومان شارژ هدیه پس از ثبت نام</p>
-                <a href="">ثبت نام</a>
+                <a href="{{route('signup')}}">ثبت نام</a>
             </div>
         </div>
         <img class="stopwatch" src="{{URL::asset('images/svg/stopwatch.svg')}}" alt="">
