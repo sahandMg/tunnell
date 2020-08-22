@@ -60,7 +60,9 @@
                     </g>
                 </svg>
             </div>
-            <img class="web-window" src="{{URL::asset('images/svg/web.svg')}}" alt="">
+            <div class="web-window">
+                <img  src="{{URL::asset('images/svg/web.svg')}}" alt="">
+            </div>
         </div>
         <div class="header-description">
             <h1>! تونلو، تونلی در دل دنیا، برای شما</h1>

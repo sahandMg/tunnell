@@ -6,6 +6,10 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
 .footer-container {
   background-color: #285d6d;
   border-top: 5px solid #03A293;

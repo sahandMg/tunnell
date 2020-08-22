@@ -6,6 +6,10 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
 .cls-1 {
   isolation: isolate; }
 
@@ -41,7 +45,8 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  max-width: 1920px; }
 
 *, *:after, *:before {
   box-sizing: inherit; }
@@ -50,6 +55,9 @@ header {
   background-image: linear-gradient(180deg, #285d6d, #03A293);
   height: 100%;
   z-index: -1; }
+
+.plugin {
+  max-width: 1920px; }
 
 .wrap {
   border-left: 0.2em solid #fff; }
@@ -83,14 +91,22 @@ header {
 
 .web-window {
   position: absolute;
+  width: 80%;
   opacity: 0;
   z-index: 0;
   left: 0;
   right: 0; }
+  .web-window img {
+    width: 100%; }
   @media screen and (max-width: 1025px) {
     .web-window {
       max-width: 1025px;
-      margin-top: 50px; } }
+      margin-top: 50px;
+      width: 60%; } }
+  @media screen and (max-width: 568px) {
+    .web-window {
+      max-width: 568px;
+      width: 90%; } }
 
 .terminalBox {
   position: relative;
@@ -127,17 +143,17 @@ header {
   align-self: center;
   line-height: 2;
   padding-right: 5%; }
-  @media screen and (max-width: 1224px) {
+  @media screen and (max-width: 1025px) {
     .header-description {
-      max-width: 1224px;
+      max-width: 1025px;
       flex-basis: 50%;
       text-align: center; } }
   .header-description h1 {
     font-size: 42px; }
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 1280px) {
       .header-description h1 {
-        max-width: 1224px;
-        font-size: 38px; } }
+        max-width: 1280px;
+        font-size: 33px; } }
     @media screen and (max-width: 1025px) {
       .header-description h1 {
         max-width: 1025px; } }
@@ -195,9 +211,9 @@ header {
   font-size: 24px;
   flex-basis: 40%;
   direction: rtl; }
-  @media screen and (max-width: 1224px) {
+  @media screen and (max-width: 1280px) {
     .cta {
-      max-width: 1224px;
+      max-width: 1280px;
       font-size: 22px; } }
   @media screen and (max-width: 1025px) {
     .cta {
@@ -221,4 +237,8 @@ header {
 
 .body {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  left: 0;
+  right: 0; }

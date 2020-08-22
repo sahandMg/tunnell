@@ -53,8 +53,8 @@
 }
 @mixin medium_screen{
 
-  @media screen and (max-width: 1224px)  {
-    max-width: 1224px;
+  @media screen and (max-width: 1280px)  {
+    max-width: 1280px;
     @content ;
   }
 }

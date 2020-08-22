@@ -1,14 +1,13 @@
 /**
  * Created by Sahand on 8/16/20.
  */
-
 //
 let header = document.querySelector('header');
 let headerHeight = document.querySelector('header').offsetHeight;
 let plugin = document.querySelector('img[class="plugin"]');
 document.querySelector('div[class="body"]').style.top = 130 * Math.log(headerHeight) +'px';
 let terminalWindow = document.querySelector('div[class="terminalBox"]');
-let webWindow = document.querySelector('img[class="web-window"]');
+let webWindow = document.querySelector('div[class="web-window"]');
 let terminalCss = terminalWindow.getBoundingClientRect();
 // NavBar
 let navPlugin = document.querySelector('img[class="nav-plugin"]');
@@ -17,7 +16,8 @@ let navPluginText = document.querySelector('img[class="nav-plugin-text"]');
 let regBtn = document.querySelector('a[class="reg"]');
 
 navPluginText.style.top = regBtn.getBoundingClientRect().bottom + 5 + 'px';
-navPluginText.style.left = regBtn.getBoundingClientRect().left + 'px';
+navPluginText.style.left = regBtn.offsetLeft + 'px';
+
 header.style.paddingTop = navBar.getBoundingClientRect().height/1.5+'px';
 // plugin.style.top = headerHeight + header.style.paddingTop + 100 + 'px';
 navPlugin.style.top = navBar.getBoundingClientRect().height - 5+'px';
@@ -87,14 +87,14 @@ new Promise((resolve,reject)=>{
         cWriter2.run(resolve);
     })
 }).then((resp)=>{
-    webWindow.style.width = terminalCss.width+'px';
-    webWindow.style.left = terminalCss.left+'px';
+    // webWindow.style.width = terminalCss.width+'px';
+    // webWindow.style.left = terminalCss.left+'px';
     let temp = terminalCss.top;
     webWindow.style.top = 0+'px';
     terminalWindow.style.transform = `translate(0,${webWindow.getBoundingClientRect().height/2}px)`;
     webWindow.style.opacity = 1;
-    webWindow.style.transition = 'block 0.5s ease-in-out';
-    terminalWindow.style.transition = 'transform 1s ease-in-out';
+    webWindow.style.transition = 'all 0.5s ease-in-out';
+    terminalWindow.style.transition = 'all 1s ease-in-out';
 }).catch((err)=>{
     console.log(err)
 });

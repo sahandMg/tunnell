@@ -44,6 +44,7 @@ html,body{
   padding: 0;
   box-sizing: border-box;
   scroll-behavior:smooth;
+  max-width: $max_width;
 
 }
 *,*:after,*:before{
@@ -53,6 +54,9 @@ header{
   background-image: $header_background;
   height: 100%;
   z-index: -1;
+}
+.plugin{
+  max-width: $max_width;
 }
 .wrap{
   border-left: 0.2em solid #fff
@@ -86,12 +90,20 @@ header{
 }
 .web-window{
   position: absolute;
+  width: 80%;
   opacity: 0;
   z-index: 0;
   left: 0;
   right: 0;
+  img{
+    width: 100%;
+  }
   @include semi_medium_screen{
     margin-top: 50px;
+    width: 60%;
+  }
+  @include semi_small_screen{
+    width: 90%;
   }
 }
 .terminalBox{
@@ -125,14 +137,18 @@ header{
   align-self: center;
   line-height: 2;
   padding-right: 5%;
-  @include medium_screen{
+  @include semi_medium_screen{
     flex-basis: 50%;
     text-align: center;
   }
   h1{
     font-size: $h1_size;
+    //@include semi_large_screen{
+    //
+    //  font-size: $h1_size - 4px;
+    //}
     @include medium_screen(){
-      font-size: $h1_size - 4px;
+      font-size: $h1_size - 9px;
     }
     @include semi_medium_screen{
 
@@ -202,4 +218,8 @@ header{
 .body{
   position: absolute;
   width: 100%;
+  max-width: $max_width;
+  margin: auto;
+  left: 0;
+  right: 0;
 }

@@ -6,6 +6,10 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
 .plugin {
   width: 100%;
   position: absolute;
@@ -23,6 +27,7 @@
       display: none; } }
 
 .nav-bar {
+  max-width: 1920px;
   position: fixed;
   top: 0;
   z-index: 5;

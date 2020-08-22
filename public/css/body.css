@@ -6,12 +6,17 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
 .features {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  margin: 60px auto; }
+  margin: 60px auto;
+  max-width: 1920px; }
   @media screen and (min-width: 1400px) {
     .features {
       margin: 200px auto 100px auto; } }
@@ -56,6 +61,7 @@
     text-align: right; }
 
 .graphic {
+  max-width: 1920px;
   width: 90%;
   text-align: center;
   margin: 20px auto;
@@ -74,9 +80,9 @@
   .graphic img {
     margin-top: 40px;
     width: 50%; }
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 1280px) {
       .graphic img {
-        max-width: 1224px;
+        max-width: 1280px;
         width: 70%; } }
     @media screen and (max-width: 480px) {
       .graphic img {
