@@ -1,0 +1,124 @@
+@import "../mixins";
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+  box-sizing: border-box;
+  background-color: $bgColor4;
+}
+*,*:after,*:before{
+  box-sizing: inherit;
+}
+.login-title{
+  font-size: $h2_size;
+  text-align: right;
+  padding-bottom: 20px;
+  color: $font_light_color;
+  h1{
+    margin-top: 20px;
+    line-height:2
+  }
+  @include extra_small_screen{
+    font-size: $h2_size - 2px;
+  }
+}
+.box-logo{
+  background-color: red;
+  text-align: center;
+  width: $form_box_width;
+  margin: 20px auto;
+  padding: 10px 0;
+
+}
+.login-container{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-family: $bold_font;
+  font-size: $h3-size - 3px;
+  color: $font_dark_color;
+  direction: rtl;
+
+  @include semi_large_screen{
+    transform: translateY(-45%);
+  }
+  @include super_small_screen{
+    padding: 10px 5%;
+    display: block;
+  }
+  .login-box {
+    flex-basis: 40%;
+    padding: 20px 1%;
+    //box-shadow: 0 0 10px gray;
+    @include semi_large_screen{
+      flex-basis: 50%;
+    }
+    @include super_small_screen{
+      padding: 10px 0;
+    }
+    @include semi_medium_screen{
+      flex-basis: 80%;
+    }
+    @include small_screen{
+      flex-basis: 100%;
+    }
+    .alter-login{
+      margin-top: 10px;
+      .google{
+        @include btnLinkStyle1;
+        display: block;
+        border-radius: 10px;
+        font-size: $h3_size;
+        width: 40%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 3px solid $font_light_color;
+        @include hooverTransition;
+        @include removeLinkStyle($font_light_color);
+        @include extra_small_screen{
+          font-size: $h4_size;
+        }
+        @include super_small_screen{
+          font-size: $h4_size - 2px;
+          padding: 7px 0;
+        }
+        &:hover{
+          background-color: $btnBgColor3;
+          @include hooverTransition
+        }
+        span{
+          direction: rtl;
+        }
+        .icon{
+          width: 10%;
+          margin: 0 2%;
+        }
+      }
+      .github{
+        @extend .google
+      }
+
+    }
+  }
+  .login-image{
+    flex-basis: 30%;
+    @include semi_large_screen{
+      flex-basis: 50%;
+    }
+    @include semi_medium_screen{
+      display: none;
+    }
+  }
+  .fpass-image{
+    @extend .login-image;
+    img{
+      width: 80%;
+    }
+  }
+
+}

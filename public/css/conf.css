@@ -1,0 +1,140 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #50c2ba; }
+
+*, *:after, *:before {
+  box-sizing: inherit; }
+
+.login-title {
+  font-size: 24px;
+  text-align: right;
+  padding-bottom: 20px;
+  color: white; }
+  .login-title h1 {
+    margin-top: 20px;
+    line-height: 2; }
+  @media screen and (max-width: 480px) {
+    .login-title {
+      max-width: 480px;
+      font-size: 22px; } }
+
+.box-logo {
+  background-color: red;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px 0; }
+
+.login-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-family: sans-b;
+  font-size: 15px;
+  color: rgba(23, 23, 23, 0.79);
+  direction: rtl; }
+  @media screen and (max-width: 1399px) {
+    .login-container {
+      max-width: 1399px;
+      transform: translateY(-45%); } }
+  @media screen and (max-width: 368px) {
+    .login-container {
+      max-width: 368px;
+      padding: 10px 5%;
+      display: block; } }
+  .login-container .login-box {
+    flex-basis: 40%;
+    padding: 20px 1%; }
+    @media screen and (max-width: 1399px) {
+      .login-container .login-box {
+        max-width: 1399px;
+        flex-basis: 50%; } }
+    @media screen and (max-width: 368px) {
+      .login-container .login-box {
+        max-width: 368px;
+        padding: 10px 0; } }
+    @media screen and (max-device-width: 1025px) {
+      .login-container .login-box {
+        max-width: 1025px;
+        flex-basis: 80%; } }
+    @media screen and (max-width: 667px) {
+      .login-container .login-box {
+        max-width: 667px;
+        flex-basis: 100%; } }
+    .login-container .login-box .alter-login {
+      margin-top: 10px; }
+      .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 2%;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        display: block;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 40%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 3px solid white;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        text-decoration: none;
+        color: white; }
+        @media screen and (max-width: 480px) {
+          .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
+            max-width: 480px;
+            font-size: 14px; } }
+        @media screen and (max-width: 368px) {
+          .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
+            max-width: 368px;
+            font-size: 12px;
+            padding: 7px 0; } }
+        .login-container .login-box .alter-login .google:hover, .login-container .login-box .alter-login .github:hover {
+          background-color: #285d6d;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in; }
+        .login-container .login-box .alter-login .google span, .login-container .login-box .alter-login .github span {
+          direction: rtl; }
+        .login-container .login-box .alter-login .google .icon, .login-container .login-box .alter-login .github .icon {
+          width: 10%;
+          margin: 0 2%; }
+  .login-container .login-image, .login-container .fpass-image {
+    flex-basis: 30%; }
+    @media screen and (max-width: 1399px) {
+      .login-container .login-image, .login-container .fpass-image {
+        max-width: 1399px;
+        flex-basis: 50%; } }
+    @media screen and (max-device-width: 1025px) {
+      .login-container .login-image, .login-container .fpass-image {
+        max-width: 1025px;
+        display: none; } }
+  .login-container .fpass-image img {
+    width: 80%; }

@@ -48,6 +48,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/auth\/conf.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/toonello\/public\/css\/conf.css",
+		"oF": 6,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/auth\/signin.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/toonello\/public\/css\/signin.css",
+		"oF": 6,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/body.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -135,6 +161,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/toonello\/public\/css\/nav_up.css",
+		"oF": 6,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/notif\/notification.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/toonello\/public\/css\/notification.css",
 		"oF": 6,
 		"oS": 0,
 		"uL": 1

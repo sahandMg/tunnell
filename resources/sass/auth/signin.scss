@@ -1,0 +1,251 @@
+@import "../mixins";
+html, body {
+  margin:0;
+  padding:0;
+  //height:100%;
+  box-sizing: border-box;
+  background-color: $bgColor4;
+}
+*,*:after,*:before{
+  box-sizing: inherit;
+}
+.login-title{
+  font-size: $h2_size;
+  text-align: center;
+  padding-bottom: 20px;
+  @include extra_small_screen{
+    font-size: $h2_size - 2px;
+  }
+}
+.login-container{
+  display: flex;
+  //position: absolute;
+  //top: 50%;
+  //transform: translateY(-50%);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 5% auto;
+  font-family: $bold_font;
+  font-size: $h3-size - 3px;
+  color: $font_dark_color;
+  direction: rtl;
+  @include semi_large_screen{
+    //transform: translateY(-45%);
+  }
+  @include super_small_screen{
+    padding: 10px 5%;
+    //top: 60%;
+    //display: block;
+  }
+  .login-box {
+    flex-basis: 40%;
+    padding: 20px 1%;
+    .box-logo{
+      background-color: red;
+      text-align: center;
+      width: $form_box_width;
+      margin: 20px auto;
+      padding: 10px 0;
+
+    }
+    //box-shadow: 0 0 10px gray;
+    @include semi_large_screen{
+      flex-basis: 50%;
+    }
+    @include super_small_screen{
+      padding: 10px 0;
+    }
+    @include semi_medium_screen{
+      flex-basis: 80%;
+    }
+    @include small_screen{
+      flex-basis: 100%;
+    }
+    form{
+      color: $font_light_color;
+      border-radius: 10px;
+      padding: 20px 3% !important;
+      width: $form_box_width;
+      margin: auto;
+      border: 5px solid $font_light_color;
+    @include semi_medium_screen{
+      width: 80%;
+    }
+    @include super_small_screen{
+      width: 100%;
+    }
+    }
+    label{
+      display: block;
+      margin: 20px 0;
+      font-family: $bold_font;
+      @include extra_small_screen{
+        font-size: $h4_size;
+      }
+      @include super_small_screen{
+        font-size: $h4_size - 2px;
+        margin: 10px 0;
+      }
+    }
+    input , textarea{
+      border: 2px solid $font_light_color;
+      background-color: transparent;
+      color: $font_light_color;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: $h4_size;
+      font-family: $bold_font;
+      width: 100%;
+      resize: none;
+      @include super_small_screen{
+        font-size: $h4_size;
+      }
+    }
+    button{
+      @include btnLinkStyle1;
+      font-size: $h3_size - 2px;
+      color: $font_light_color;
+      background-color: transparent;
+      width: $form_box_width;
+      font-family: $bold_font;
+      margin: 20px auto 10px auto;
+      padding: 5px 0;
+      display: block;
+      @include semi_medium_screen{
+        margin-top: 50px;
+      }
+      @include semi_small_screen{
+        width: 70%;
+      }
+      @include extra_small_screen{
+        font-size: $h4_size;
+        width: 70%;
+        margin: 20px auto 10px auto;
+      }
+      @include super_small_screen{
+
+      }
+      &:hover{
+        background-color: $btnBgColor3;
+        @include hooverTransition
+      }
+    }
+    .forget{
+      @include removeLinkStyle($font_light_color);
+      display: inline-block;
+      margin: 10px 0;
+      @include semi_small_screen{
+        font-size: $h4_size;
+      }
+      @include extra_small_screen{
+        font-size: $h4_size - 2px;
+      }
+      &:hover{
+        color: $bgColor3;
+        @include hooverTransition
+      }
+    }
+    //@include semi_medium_screen{
+    //  flex-basis: 80%;
+    //  background-image: url('../images/svg/contact.svg');
+    //  background-repeat: no-repeat;
+    //  background-size: contain;
+    //  background-position: center;
+    //
+    //}
+  }
+  .login-image{
+    flex-basis: 40%;
+    @include semi_large_screen{
+      flex-basis: 50%;
+    }
+    @include semi_medium_screen{
+      display: none;
+    }
+  }
+  .fpass-image{
+    @extend .login-image;
+    img{
+      width: 80%;
+    }
+  }
+  .spacer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .spacer-line{
+      flex-basis: 40%;
+      border: 2px solid $bgColor2;
+      margin: 20px 0;
+    }
+    .spacer-text{
+      margin: 0 1%;
+    }
+  }
+  .alter-login{
+    margin-top: 10px;
+
+    .google{
+      display: flex;
+      @include btnLinkStyle1;
+      justify-content: center;
+      border-radius: 10px;
+      align-items: center;
+      width: $form_box_width;
+      margin: 10px auto;
+      padding: 5px 0;
+      border: 3px solid $font_light_color;
+      @include hooverTransition;
+      @include removeLinkStyle($font_light_color);
+      @include extra_small_screen{
+        font-size: $h4_size;
+      }
+      @include super_small_screen{
+        font-size: $h4_size - 2px;
+        padding: 7px 0;
+      }
+      &:hover{
+        background-color: $btnBgColor3;
+        @include hooverTransition
+      }
+      span{
+        direction: rtl;
+      }
+      .icon{
+        width: 10%;
+        margin: 0 2%;
+      }
+    }
+    .github{
+      @extend .google
+    }
+
+  }
+  .reg-cite{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 2%;
+    color: $font_light_color;
+    @include extra_small_screen{
+      font-size: $h4_size - 2px;
+    }
+    .reg-btn{
+      @include removeLinkStyle($font_light_color);
+      @include btnLinkStyle1;
+      display: inline-block;
+      margin-top: 20px;
+      width: $form_box_width;
+      @include super_small_screen{
+        font-size: $h4_size - 2px;
+      }
+      &:hover{
+        background-color: $btnBgColor3;
+        @include hooverTransition
+      }
+    }
+
+  }
+}

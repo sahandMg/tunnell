@@ -89,7 +89,7 @@
   .graphic h2, .graphic h3 {
     font-family: sans-b;
     font-size: 24px;
-    color: rgba(40, 40, 40, 0.9); }
+    color: rgba(23, 23, 23, 0.79); }
     @media screen and (max-width: 667px) {
       .graphic h2, .graphic h3 {
         max-width: 667px;

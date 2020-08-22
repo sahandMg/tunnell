@@ -1,0 +1,1 @@
+document.querySelector('div[class="login-container"]').style.height = window.innerHeight + 'px';

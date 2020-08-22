@@ -15,7 +15,8 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('login');
+            session()->flash('message','سشن منقضی شده است');
+            return route('signin');
         }
     }
 }

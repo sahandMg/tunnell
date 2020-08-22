@@ -23,7 +23,7 @@
   .footer-container .footer-about {
     flex-basis: 33%;
     text-align: center;
-    border-right: 3px solid whitesmoke; }
+    border-right: 3px solid #ffffff; }
     .footer-container .footer-about img {
       width: 10%; }
     .footer-container .footer-about p {
@@ -36,11 +36,11 @@
         max-width: 667px;
         padding: 10px 2%;
         border: none;
-        border-bottom: 3px solid whitesmoke; } }
+        border-bottom: 3px solid #ffffff; } }
   .footer-container .footer-links {
     flex-basis: 33%;
     padding: 10px;
-    border-right: 3px solid whitesmoke;
+    border-right: 3px solid #ffffff;
     direction: rtl;
     text-align: right;
     color: white;
@@ -69,7 +69,7 @@
         max-width: 667px;
         padding: 10px 2%;
         border: none;
-        border-bottom: 3px solid whitesmoke; } }
+        border-bottom: 3px solid #ffffff; } }
   .footer-container .footer-contact {
     flex-basis: 33%;
     padding: 10px;

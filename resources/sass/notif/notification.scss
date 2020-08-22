@@ -1,0 +1,30 @@
+@import "../mixins";
+.notif-box{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 20%;
+  .notif{
+    position: relative;
+    background-color: $notif_bg_color;
+    color: $font_light_color;
+    font-family: $bold_font;
+    font-size: $h4_size;
+    padding: 10px 2% 20px 2%;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    border-radius: 10px;
+    transform: translate(-500px,0);
+    p{
+      margin-top: 5px;
+      padding: 5px;
+    }
+    span{
+      display: block;
+      width: 5%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

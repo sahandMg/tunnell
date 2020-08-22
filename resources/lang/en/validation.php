@@ -30,7 +30,7 @@ return [
         'array' => 'The :attribute must have between :min and :max items.',
     ],
     'boolean' => 'The :attribute field must be true or false.',
-    'confirmed' => 'The :attribute confirmation does not match.',
+    'confirmed' => ' تاییدیه :attribute نادرست است',
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
@@ -78,25 +78,25 @@ return [
     ],
     'max' => [
         'numeric' => 'The :attribute may not be greater than :max.',
-        'file' => 'The :attribute may not be greater than :max kilobytes.',
+        'file' => ' سایز:attribute حداکثر باید :max کیلوبایت باشد',
         'string' => 'The :attribute may not be greater than :max characters.',
         'array' => 'The :attribute may not have more than :max items.',
     ],
-    'mimes' => 'The :attribute must be a file of type: :values.',
+    'mimes' => 'باشد :attribute :values باید به یکی از فرمت های',
     'mimetypes' => 'The :attribute must be a file of type: :values.',
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
+        'string' =>  'تعداد کارکترهای :attribute حداقل باید :min باشد',
         'array' => 'The :attribute must have at least :min items.',
     ],
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => 'The :attribute must be a number.',
+    'numeric' => ':attribute باید از نوع عدد باشد',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => 'فیلد :attribute اجباری است',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -113,7 +113,7 @@ return [
     'starts_with' => 'The :attribute must start with one of the following: :values.',
     'string' => 'The :attribute must be a string.',
     'timezone' => 'The :attribute must be a valid zone.',
-    'unique' => 'The :attribute has already been taken.',
+    'unique' => ' :attribute تکراری است',
     'uploaded' => 'The :attribute failed to upload.',
     'url' => 'The :attribute format is invalid.',
     'uuid' => 'The :attribute must be a valid UUID.',
@@ -130,8 +130,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'alpha_num' => 'نام کاربری باید فقط شامل اعداد و حروف باشد ',
         ],
     ],
 
@@ -146,6 +146,28 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name'=>'نام کاربری',
+        'p_name'=>'نام محصول',
+        'address'=>'آدرس',
+        'title'=>'موضوع',
+        'p_title'=>'عنوان محصول',
+        'img'=>'عکس',
+        'price'=>'قیمت',
+        'desc'=>'توضیحات',
+        'cart'=>'سبد خرید',
+        'd_name'=>'نام دستگاه',
+        'email'=>'ایمیل',
+        'password'=>'کلمه عبور',
+        'phone'=>'شماره همراه',
+        'w_ssid'=>'وای فای',
+        'ssid'=>'شناسه اتصال دستگاه',
+        'location'=>'منطقه',
+        'city'=>'شهر',
+        'unique_id'=>'شناسه یکتای دستگاه',
+        'fcm_token'=>'شناسه fcm',
+        'filter_name'=>'نام فیلتر',
+        'key'=>'کلید ادمین'
+    ],
 
 ];

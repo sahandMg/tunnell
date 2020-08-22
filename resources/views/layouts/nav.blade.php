@@ -2,8 +2,8 @@
 @section('nav')
     <nav id="#top" class="nav-bar">
         <ul class="auth-ul">
-            <li><a class="login" href="">ورود</a></li>
-            <li><a class="reg" href="">ثبت نام</a></li>
+            <li><a class="login" href="{{route('signin')}}">ورود</a></li>
+            <li><a class="reg" href="{{route('signup')}}">ثبت نام</a></li>
         </ul>
         <ul class="nav-ul">
             <li><a class="active" href="{{route('home')}}">تونلو</a></li>
@@ -23,8 +23,8 @@
             <li><a href="#pricing">قیمت</a></li>
             <li><a href="">راه‌حل‌ ها</a></li>
             <li><a href="">آموزش ها</a></li>
-            <li><a class="login" href="">ورود</a></li>
-            <li><a class="reg" href="">ثبت نام</a></li>
+            <li><a class="login" href="{{route('signin')}}">ورود</a></li>
+            <li><a class="reg" href="{{route('signup')}}">ثبت نام</a></li>
         </ul>
         <img onclick="triggerMenu()" class="burger-trigger" src="{{URL::asset('images/svg/trigger.svg')}}" alt="">
         <img class="burger-plugin-text" src="{{URL::asset('images/svg/burgerText.svg')}}" alt="">
