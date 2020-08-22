@@ -1,7 +1,7 @@
 @import "../mixins";
 .notif-box{
   position: absolute;
-  bottom: auto;
+  top: 0;
   left: 5px;
   width: 20%;
   @include semi_medium_screen{
@@ -31,6 +31,7 @@
     }
     p{
       margin-top: 5px;
+      line-height: 2;
       padding: 5px;
     }
     span{

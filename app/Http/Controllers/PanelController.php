@@ -22,6 +22,8 @@ class PanelController extends Controller
 
     public function Tutorials(){
 
+        $user = Auth::user()->with('tokens')->with('wallet')->with('transactions')->first();
+        return view('panel.tutorials',['user'=>$user]);
 //       return new Tutorials();
     }
 
