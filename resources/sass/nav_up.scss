@@ -8,8 +8,9 @@
   i{
     transform: scale(3);
     color:$navUpColor;
+
     @include medium_screen{
-      transform: scale(1.5);
+      transform: scale(2);
     }
     @include semi_medium_screen{
       transform: scale(2);
