@@ -20,7 +20,7 @@ navPluginText.style.left = regBtn.offsetLeft + 'px';
 
 header.style.paddingTop = navBar.getBoundingClientRect().height/1.5+'px';
 // plugin.style.top = headerHeight + header.style.paddingTop + 100 + 'px';
-navPlugin.style.top = navBar.getBoundingClientRect().height - 5+'px';
+navPlugin.style.top = navBar.offsetHeight +'px';
 window.addEventListener('scroll', function (event) {
     if(document.body.getBoundingClientRect().top < -headerHeight/20){
 
