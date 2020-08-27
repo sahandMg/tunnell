@@ -42,8 +42,8 @@ html, body {
   visibility: hidden;
   width: 5%;
   position: absolute;
-  right: 0;
-  bottom: 5%;
+  left: 2%;
+  bottom: 2%;
   transform: rotate(90deg);
   z-index: 10; }
   @media screen and (max-width: 780px) {

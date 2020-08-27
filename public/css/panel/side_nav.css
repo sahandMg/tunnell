@@ -106,6 +106,12 @@ html, body {
       font-size: 18px;
       font-family: panel-sans-b;
       text-align: center; }
+      .side-nav .side-nav-ul-container .side-ul-items .charge-btn-nav {
+        display: none; }
+        @media screen and (max-width: 780px) {
+          .side-nav .side-nav-ul-container .side-ul-items .charge-btn-nav {
+            max-width: 780px;
+            display: flex; } }
       .side-nav .side-nav-ul-container .side-ul-items a {
         text-decoration: none;
         color: white;

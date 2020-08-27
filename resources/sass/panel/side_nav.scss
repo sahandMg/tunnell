@@ -86,6 +86,12 @@
       font-size: $h3_size;
       font-family: $bold_font_panel;
       text-align: center;
+      .charge-btn-nav{
+        display: none;
+        @include strange_small_screen{
+          display: flex;
+        }
+      }
       a{
         @include removeLinkStyle($font_light_color);
         @include hooverTransition;

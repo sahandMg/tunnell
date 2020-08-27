@@ -133,10 +133,10 @@ window.onclick = function(event) {
 
 window.addEventListener('resize',function () {
 
-    if(window.innerWidth > 780){
-
-        document.querySelector('li[class="charge-btn-nav"]').style.display = 'none';
-    }else{
-        document.querySelector('li[class="charge-btn-nav"]').style.display = 'flex';
-    }
+    // if(window.innerWidth > 780){
+    //
+    //     document.querySelector('li[class="charge-btn-nav"]').style.display = 'none';
+    // }else{
+    //     document.querySelector('li[class="charge-btn-nav"]').style.display = 'flex';
+    // }
 });

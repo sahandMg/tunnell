@@ -51,6 +51,6 @@ let opensideMenu = function () {
     if(window.innerHeight <= sideNav.offsetHeight){
         sideNav.style.overflow = 'scroll';
     }else{
-        sideNav.style.overflow = '';
+        sideNav.style.overflow = 'hidden';
     }
 };
