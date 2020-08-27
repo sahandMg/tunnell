@@ -44,8 +44,8 @@ html, body {
   @media screen and (max-width: 780px) {
     .side-nav {
       max-width: 780px;
-      visibility: hidden;
-      position: absolute;
+      position: fixed;
+      top: 0;
       right: 0;
       opacity: 0;
       flex-basis: 30%; } }

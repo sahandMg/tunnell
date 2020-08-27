@@ -2,73 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36780073-03e2-4a03-b450-6e5933056a38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Helpers/GetUserIp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthResponsables/forgetPass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthResponsables/sendMailConfAgain.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/svg/greenStatus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/svg/redStatus.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/svg/sideTrigger.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/panel/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/panel/side_nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/billing.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/top_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/panel/tutorial.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/emails/invoiceMail.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/panel/dashboard.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/panel/master.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/panel2/billing.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/panel2/tutorials.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/transactions/paymentFailed.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/transactions/paymentSuccess.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Remote/Test/TestController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Remote/Test/TestHardwareController.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Transactions.php" afterPath="$PROJECT_DIR$/app/Transaction.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/panel/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/panel2/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/panel/master/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/panel2/master/layout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthResponsables/Signin.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthResponsables/Signin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Notifications/MailConfirmationNotification.php" afterPath="$PROJECT_DIR$/app/Notifications/MailConfirmationNotification.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Token.php" afterPath="$PROJECT_DIR$/app/Token.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Wallet.php" afterPath="$PROJECT_DIR$/app/Wallet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/body.css" afterPath="$PROJECT_DIR$/public/css/body.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/conf.css" afterPath="$PROJECT_DIR$/public/css/conf.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/contact.css" afterPath="$PROJECT_DIR$/public/css/contact.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/customers.css" afterPath="$PROJECT_DIR$/public/css/customers.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/footer.css" afterPath="$PROJECT_DIR$/public/css/footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/header.css" afterPath="$PROJECT_DIR$/public/css/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/nav_bar.css" afterPath="$PROJECT_DIR$/public/css/nav_bar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/nav_up.css" afterPath="$PROJECT_DIR$/public/css/nav_up.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/notification.css" afterPath="$PROJECT_DIR$/public/css/notification.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/pricing.css" afterPath="$PROJECT_DIR$/public/css/pricing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/sectioner.css" afterPath="$PROJECT_DIR$/public/css/sectioner.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/signin.css" afterPath="$PROJECT_DIR$/public/css/signin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/auth/confirmationEmail.js" afterPath="$PROJECT_DIR$/public/js/auth/confirmationEmail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/notification/index.js" afterPath="$PROJECT_DIR$/public/js/notification/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_colors.scss" afterPath="$PROJECT_DIR$/resources/sass/_colors.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_globals.scss" afterPath="$PROJECT_DIR$/resources/sass/_globals.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_mixins.scss" afterPath="$PROJECT_DIR$/resources/sass/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/auth/conf.scss" afterPath="$PROJECT_DIR$/resources/sass/auth/conf.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/config.codekit3" afterPath="$PROJECT_DIR$/resources/sass/config.codekit3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/notif/notification.scss" afterPath="$PROJECT_DIR$/resources/sass/notif/notification.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/confirmEmail.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/confirmEmail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/forgetpassword.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/forgetpassword.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/signup.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/signup.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/dashboard.css" afterPath="$PROJECT_DIR$/public/css/panel/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/index.css" afterPath="$PROJECT_DIR$/public/css/panel/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/side_nav.css" afterPath="$PROJECT_DIR$/public/css/panel/side_nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/index.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/panel/billing.blade.php" afterPath="$PROJECT_DIR$/resources/views/panel/billing.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/panel/tutorials.blade.php" afterPath="$PROJECT_DIR$/resources/views/panel/tutorials.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="toonello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +33,7 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/panel/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="600">
               <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="85" selection-end-column="16" />
               <folding>
                 <element signature="e#248#312#0#HTML" expanded="true" />
@@ -104,27 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="billing.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/panel/billing.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/panel/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="907">
@@ -132,6 +53,16 @@
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="62" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,9 +80,12 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="395">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+              <folding>
+                <element signature="e#819#2554#0" expanded="false" />
+                <element signature="e#1694#2552#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,8 +105,18 @@
       <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="105" column="19" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="19" />
+            <state relative-caret-position="568">
+              <caret line="124" column="25" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -181,8 +125,8 @@
       <file leaf-file-name="side_nav.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+            <state relative-caret-position="390">
+              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -191,10 +135,10 @@
       <file leaf-file-name="billing.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/panel/billing.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="128" selection-start-line="17" selection-start-column="128" selection-end-line="17" selection-end-column="128" />
+            <state relative-caret-position="390">
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding>
-                <element signature="e#2350#2381#0#HTML" expanded="true" />
+                <element signature="e#2352#2383#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -266,14 +210,14 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" />
-        <option value="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
-        <option value="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
         <option value="$PROJECT_DIR$/resources/views/panel/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/panel/billing.scss" />
-        <option value="$PROJECT_DIR$/resources/views/panel/billing.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/panel/index.scss" />
         <option value="$PROJECT_DIR$/resources/views/panel/master.blade.php" />
         <option value="$PROJECT_DIR$/public/js/panel/index.js" />
+        <option value="$PROJECT_DIR$/resources/views/panel/billing.blade.php" />
+        <option value="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
+        <option value="$PROJECT_DIR$/resources/sass/panel/index.scss" />
+        <option value="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
       </list>
     </option>
   </component>
@@ -783,12 +727,12 @@
       <workItem from="1597595636078" duration="72616000" />
       <workItem from="1597918940455" duration="58900000" />
       <workItem from="1598169493764" duration="8616000" />
-      <workItem from="1598259437260" duration="68863000" />
+      <workItem from="1598259437260" duration="69960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208995000" />
+    <option name="totallyTimeSpent" value="210092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
@@ -803,7 +747,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171459" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1146,14 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PanelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
@@ -1172,42 +1108,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/panel/billing.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/billing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="128" selection-start-line="17" selection-start-column="128" selection-end-line="17" selection-end-column="128" />
-          <folding>
-            <element signature="e#2350#2381#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="85" selection-end-column="16" />
-          <folding>
-            <element signature="e#248#312#0#HTML" expanded="true" />
-            <element signature="e#1348#1370#0#HTML" expanded="true" />
-            <element signature="e#2340#2362#0#HTML" expanded="true" />
-            <element signature="e#3159#3190#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1219,22 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="105" column="19" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -1242,14 +1131,6 @@
           <folding>
             <element signature="e#4563#4570#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,6 +1149,72 @@
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="62" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="124" column="25" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/billing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="e#2352#2383#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#819#2554#0" expanded="false" />
+            <element signature="e#1694#2552#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="85" selection-end-column="16" />
+          <folding>
+            <element signature="e#248#312#0#HTML" expanded="true" />
+            <element signature="e#1348#1370#0#HTML" expanded="true" />
+            <element signature="e#2340#2362#0#HTML" expanded="true" />
+            <element signature="e#3159#3190#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

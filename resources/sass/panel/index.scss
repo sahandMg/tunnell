@@ -31,6 +31,7 @@ html,body{
   z-index: 10;
   @include strange_small_screen{
     visibility: visible;
+    position: fixed;
   }
   @include extra_small_screen{
     width: 10%;

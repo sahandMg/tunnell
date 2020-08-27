@@ -49,7 +49,8 @@ html, body {
   @media screen and (max-width: 780px) {
     .side-nav-trigger {
       max-width: 780px;
-      visibility: visible; } }
+      visibility: visible;
+      position: fixed; } }
   @media screen and (max-width: 480px) {
     .side-nav-trigger {
       max-width: 480px;

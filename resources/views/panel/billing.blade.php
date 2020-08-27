@@ -26,7 +26,7 @@
         </table>
 
         <table class="token-table-vertical">
-            <caption class="table-title">لیست توکن ها</caption>
+            <caption class="table-title">لیست تراکنش ها</caption>
 
             <tbody>
 

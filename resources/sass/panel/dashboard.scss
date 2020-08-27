@@ -4,9 +4,10 @@
   padding-top: 50px;
   .token-btn{
     text-align: right;
+    width: 100%;
     button{
       @include btnStyle2;
-      width: 15%;
+      width: 20%;
       font-size: $h4_size;
       direction: rtl;
       &:hover{
@@ -14,11 +15,11 @@
         @include hooverTransition
       }
       @include semi_medium_screen{
-        width: 25%;
+        width: 40%;
       }
       @include extra_small_screen{
-
-        width: 30%;
+        width: 60%;
+        margin: auto;
       }
     }
   }
