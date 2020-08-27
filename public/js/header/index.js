@@ -11,7 +11,7 @@ let webWindow = document.querySelector('div[class="web-window"]');
 let terminalCss = terminalWindow.getBoundingClientRect();
 // NavBar
 let navPlugin = document.querySelector('img[class="nav-plugin"]');
-let navBar = document.querySelector('nav[class="top-nav"]');
+let navBar = document.querySelector('nav');
 let navPluginText = document.querySelector('img[class="nav-plugin-text"]');
 let regBtn = document.querySelector('a[class="reg"]');
 
@@ -19,8 +19,13 @@ navPluginText.style.top = regBtn.getBoundingClientRect().bottom + 5 + 'px';
 navPluginText.style.left = regBtn.offsetLeft + 'px';
 
 header.style.paddingTop = navBar.getBoundingClientRect().height/1.5+'px';
-// plugin.style.top = headerHeight + header.style.paddingTop + 100 + 'px';
-navPlugin.style.top = navBar.offsetHeight +'px';
+
+
+window.addEventListener('resize',function () {
+    // plugin.style.top = Number(headerHeight)+Number(header.style.paddingTop.replace('px',''))+'px';
+});
+
+navPlugin.style.top = navBar.offsetHeight - 2 +'px';
 window.addEventListener('scroll', function (event) {
     if(document.body.getBoundingClientRect().top < -headerHeight/20){
 

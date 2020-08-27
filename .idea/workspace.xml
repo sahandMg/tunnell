@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="36780073-03e2-4a03-b450-6e5933056a38" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/index.css" afterPath="$PROJECT_DIR$/public/css/panel/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/side_nav.css" afterPath="$PROJECT_DIR$/public/css/panel/side_nav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/panel/index.js" afterPath="$PROJECT_DIR$/public/js/panel/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/panel/side_nav.js" afterPath="$PROJECT_DIR$/public/js/panel/side_nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/index.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/header/index.js" afterPath="$PROJECT_DIR$/public/js/header/index.js" />
     </list>
     <ignored path="toonello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,15 +56,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/header/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-              <folding>
-                <element signature="e#821#2556#0" expanded="false" />
-                <element signature="e#1696#2554#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/sass/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +79,7 @@
       <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
+            <state relative-caret-position="847">
               <caret line="75" column="45" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="45" />
               <folding />
             </state>
@@ -129,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/images/svg/redStatus2.svg" />
         <option value="$PROJECT_DIR$/public/images/svg/redStatus3.svg" />
         <option value="$PROJECT_DIR$/public/images/svg/redStatus.svg" />
         <option value="$PROJECT_DIR$/public/images/svg/greenStatus.svg" />
@@ -172,14 +173,15 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/CreateTokenResponsable.php" />
         <option value="$PROJECT_DIR$/public/images/svg/sideTrigger.svg" />
-        <option value="$PROJECT_DIR$/public/js/header/index.js" />
         <option value="$PROJECT_DIR$/public/js/navbar/index.js" />
         <option value="$PROJECT_DIR$/resources/views/panel/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
         <option value="$PROJECT_DIR$/public/js/panel/side_nav.js" />
         <option value="$PROJECT_DIR$/public/js/panel/index.js" />
         <option value="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
+        <option value="$PROJECT_DIR$/resources/sass/header.scss" />
         <option value="$PROJECT_DIR$/resources/sass/panel/index.scss" />
+        <option value="$PROJECT_DIR$/public/js/header/index.js" />
       </list>
     </option>
   </component>
@@ -444,6 +446,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toonello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="toonello" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -689,12 +713,12 @@
       <workItem from="1597595636078" duration="72616000" />
       <workItem from="1597918940455" duration="58900000" />
       <workItem from="1598169493764" duration="8616000" />
-      <workItem from="1598259437260" duration="79854000" />
+      <workItem from="1598259437260" duration="81750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219986000" />
+    <option name="totallyTimeSpent" value="221882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
@@ -744,14 +768,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/transactions/paymentFailed.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/transactions/paymentSuccess.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1066,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1140,19 +1148,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="75" column="45" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#821#2556#0" expanded="false" />
+            <element signature="e#1696#2554#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,14 +1193,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
+    <entry file="file://$PROJECT_DIR$/public/js/header/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#821#2556#0" expanded="false" />
-            <element signature="e#1696#2554#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
