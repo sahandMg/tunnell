@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="36780073-03e2-4a03-b450-6e5933056a38" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/dashboard.css" afterPath="$PROJECT_DIR$/public/css/panel/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/index.css" afterPath="$PROJECT_DIR$/public/css/panel/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/side_nav.css" afterPath="$PROJECT_DIR$/public/css/panel/side_nav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/dashboard.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/index.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/panel/billing.blade.php" afterPath="$PROJECT_DIR$/resources/views/panel/billing.blade.php" />
     </list>
     <ignored path="toonello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,8 +108,8 @@
       <file leaf-file-name="dashboard.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -727,16 +720,16 @@
       <workItem from="1597595636078" duration="72616000" />
       <workItem from="1597918940455" duration="58900000" />
       <workItem from="1598169493764" duration="8616000" />
-      <workItem from="1598259437260" duration="69960000" />
+      <workItem from="1598259437260" duration="69999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210092000" />
+    <option name="totallyTimeSpent" value="210131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -747,7 +740,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171459" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1212,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/panel/dashboard.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
