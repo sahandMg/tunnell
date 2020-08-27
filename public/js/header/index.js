@@ -11,7 +11,7 @@ let webWindow = document.querySelector('div[class="web-window"]');
 let terminalCss = terminalWindow.getBoundingClientRect();
 // NavBar
 let navPlugin = document.querySelector('img[class="nav-plugin"]');
-let navBar = document.querySelector('nav');
+let navBar = document.querySelector('nav[class="top-nav"]');
 let navPluginText = document.querySelector('img[class="nav-plugin-text"]');
 let regBtn = document.querySelector('a[class="reg"]');
 

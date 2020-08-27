@@ -32,7 +32,9 @@ html, body {
   background-color: #50c2ba;
   height: 100%;
   padding: 10px 1%;
-  border-left: 5px solid #285d6d; }
+  border-left: 5px solid #285d6d;
+  opacity: 1;
+  visibility: visible; }
   @media screen and (max-width: 1399px) {
     .side-nav {
       max-width: 1399px;

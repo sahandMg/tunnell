@@ -26,7 +26,7 @@ html,body{
   position: absolute;
   //top: 30%;
   right: 0;
-  top: 10%;
+  bottom: 5%;
   transform: rotate(90deg);
   z-index: 10;
   @include strange_small_screen{

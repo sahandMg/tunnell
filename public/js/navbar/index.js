@@ -50,6 +50,7 @@ let triggerMenu = function () {
         // Object.entries(stl2).forEach(function (css) {
         //     triggerIcon.style[css[0]] = css[1]
         // });
+
         //    check if window height < meun hight => create scrollable menu
         if(window.innerHeight < burgerNav.offsetHeight){
             burgerNav.style.height = window.innerHeight + 'px';

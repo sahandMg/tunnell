@@ -18,21 +18,17 @@
 //         })
 //     }
 // }
+let sideNav = document.querySelector('nav[class="side-nav"]');
+
 window.addEventListener('resize', function(event){
 
-    let sideNav = document.querySelector('nav[class="side-nav"]');
     if(window.innerWidth > 780){
         sideNav.style.opacity = '1';
         sideNav.style.visibility = 'visible';
-    }else{
-        sideNav.style.opacity = '0';
-        sideNav.style.visibility = 'hidden';
     }
-
 });
 let opensideMenu = function () {
 
-    let sideNav = document.querySelector('nav[class="side-nav"]');
     let trigger = document.querySelector('img[class="side-nav-trigger"]');
 
     if(sideNav.style.visibility == 'visible'){
@@ -50,5 +46,13 @@ let opensideMenu = function () {
         sideNav.style.opacity = '1';
         sideNav.style.transition = 'all 0.5s ease-in-out';
         sideNav.style.visibility = 'visible';
+    }
+
+    if(window.innerHeight <= sideNav.offsetHeight){
+        sideNav.style.height = window.innerHeight + 'px';
+        sideNav.style.overflow = 'scroll';
+    }else{
+        sideNav.style.overflow = '';
+        sideNav.style.height = 100+'%';
     }
 };
