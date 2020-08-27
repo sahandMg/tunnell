@@ -80,10 +80,8 @@ let createToken = function (e) {
                 let alert = document.querySelector('div[class="charge-alert"]');
                 alert.style.display = 'block';
                 alert.innerHTML = resp.data.message;
-                // alert.setAttribute('class','charge-alert');
-                // alert.appendChild(document.createTextNode(resp.data.message));
-                // document.querySelector('div[class="table-container"]').prepend(alert)
             }else{
+                localStorage.setItem('tokenCreated',1);
                 window.location.reload();
             }
         }
@@ -91,6 +89,21 @@ let createToken = function (e) {
         console.log(err)
     })
 };
+
+if(localStorage.getItem('tokenCreated') !== null){
+
+    let myalert = document.querySelector('div[class="charge-alert"]');
+    myalert.style.display = 'block';
+    myalert.style.backgroundColor = '#50c2ba';
+    myalert.style.color = 'white';
+    myalert.innerHTML = 'توکن ایجاد شد';
+    let closeNotifBox = function () {
+        myalert.style.display = 'none';
+    };
+    setTimeout(closeNotifBox,3000);
+    localStorage.removeItem('tokenCreated');
+
+}
 
 // Get the modal
 var modal = document.getElementById("myModal");

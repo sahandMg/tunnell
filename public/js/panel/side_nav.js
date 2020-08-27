@@ -49,10 +49,8 @@ let opensideMenu = function () {
     }
 
     if(window.innerHeight <= sideNav.offsetHeight){
-        sideNav.style.height = window.innerHeight + 'px';
         sideNav.style.overflow = 'scroll';
     }else{
         sideNav.style.overflow = '';
-        sideNav.style.height = 100+'%';
     }
 };

@@ -2,6 +2,7 @@
 
 .dashboard-container{
   padding-top: 50px;
+  height: 100%;
   .token-btn{
     text-align: right;
     width: 100%;
@@ -35,6 +36,13 @@
       line-height: 1.5;
     }
   }
+  .table-container{
+    height: 100%;
+    overflow: scroll;
+    @include semi_small_screen{
+      display: none;
+    }
+  }
   .table-title{
     font-family: $bold_font_panel;
     font-size: $h2_size;
@@ -49,12 +57,9 @@
     border: 5px solid $bgColor3;
     border-radius: 10px;
     width: 100%;
-    margin: 100px auto;
+    margin: 0 auto;
     color: $font_dark_color;
     text-align: center;
-    @include semi_small_screen{
-      display: none;
-    }
     thead{
       font-family: $bold_font_panel;
       border-bottom: 1px solid gray;
@@ -82,12 +87,19 @@
       background-image: url('../../images/svg/greenStatus.svg');
     }
   }
-  .token-table-vertical{
+
+  .table-container-vertical{
     display: none;
-    @extend .token-table;
+    width: 100%;
     @include semi_small_screen{
-      display: table;
+      display: block;
+      height: 100%;
+      overflow: scroll;
     }
+  }
+  .token-table-vertical{
+
+    @extend .token-table;
     tr{
       background-color: lighten(gray,40);
     }
@@ -95,4 +107,5 @@
       width: 100%;
     }
   }
+
 }

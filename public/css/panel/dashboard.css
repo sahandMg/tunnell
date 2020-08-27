@@ -19,7 +19,8 @@ html, body {
   margin: auto; }
 
 .dashboard-container {
-  padding-top: 50px; }
+  padding-top: 50px;
+  height: 100%; }
   .dashboard-container .token-btn {
     text-align: right;
     width: 100%; }
@@ -67,6 +68,13 @@ html, body {
     border-radius: 10px; }
     .dashboard-container .charge-alert p {
       line-height: 1.5; }
+  .dashboard-container .table-container {
+    height: 100%;
+    overflow: scroll; }
+    @media screen and (max-width: 568px) {
+      .dashboard-container .table-container {
+        max-width: 568px;
+        display: none; } }
   .dashboard-container .table-title {
     font-family: panel-sans-b;
     font-size: 24px;
@@ -80,13 +88,9 @@ html, body {
     border: 5px solid #285d6d;
     border-radius: 10px;
     width: 100%;
-    margin: 100px auto;
+    margin: 0 auto;
     color: rgba(23, 23, 23, 0.79);
     text-align: center; }
-    @media screen and (max-width: 568px) {
-      .dashboard-container .token-table, .dashboard-container .token-table-vertical {
-        max-width: 568px;
-        display: none; } }
     .dashboard-container .token-table thead, .dashboard-container .token-table-vertical thead {
       font-family: panel-sans-b;
       border-bottom: 1px solid gray; }
@@ -105,15 +109,18 @@ html, body {
       cursor: pointer; }
     .dashboard-container .token-table .green-status-td, .dashboard-container .token-table-vertical .green-status-td {
       background-image: url("../../images/svg/greenStatus.svg"); }
-  .dashboard-container .token-table-vertical {
-    display: none; }
+  .dashboard-container .table-container-vertical {
+    display: none;
+    width: 100%; }
     @media screen and (max-width: 568px) {
-      .dashboard-container .token-table-vertical {
+      .dashboard-container .table-container-vertical {
         max-width: 568px;
-        display: table; } }
-    .dashboard-container .token-table-vertical tr {
-      background-color: #e6e6e6; }
-    @media screen and (max-width: 480px) {
-      .dashboard-container .token-table-vertical {
-        max-width: 480px;
-        width: 100%; } }
+        display: block;
+        height: 100%;
+        overflow: scroll; } }
+  .dashboard-container .token-table-vertical tr {
+    background-color: #e6e6e6; }
+  @media screen and (max-width: 480px) {
+    .dashboard-container .token-table-vertical {
+      max-width: 480px;
+      width: 100%; } }
