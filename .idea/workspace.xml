@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36780073-03e2-4a03-b450-6e5933056a38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelResponsables/CreateTokenResponsable.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/BillingHandler.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelResponsables/BillingHandler.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/Dashboard.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelResponsables/Dashboard.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/Tutorials.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelResponsables/Tutorials.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PanelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/panel/side_nav.css" afterPath="$PROJECT_DIR$/public/css/panel/side_nav.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/svg/sideTrigger.svg" afterPath="$PROJECT_DIR$/public/images/svg/sideTrigger.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/panel/index.js" afterPath="$PROJECT_DIR$/public/js/panel/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" afterPath="$PROJECT_DIR$/resources/sass/panel/side_nav.scss" />
     </list>
     <ignored path="toonello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/panel/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
+            <state relative-caret-position="810">
               <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
@@ -87,21 +79,38 @@
         <entry file="file://$PROJECT_DIR$/public/js/panel/side_nav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="30" />
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/panel/index.scss">
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding>
-                <element signature="e#819#2554#0" expanded="false" />
-                <element signature="e#1694#2552#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="568">
+              <caret line="124" column="25" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="60" column="26" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sideTrigger.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/images/svg/sideTrigger.svg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="12" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="side_nav.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="side_nav.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -161,7 +170,6 @@
         <option value="$PROJECT_DIR$/resources/views/auth/signup.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_globals.scss" />
         <option value="$PROJECT_DIR$/resources/sass/_mixins.scss" />
-        <option value="$PROJECT_DIR$/public/js/panel/side_nav.js" />
         <option value="$PROJECT_DIR$/resources/sass/panel/top_nav.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/Purchase.php" />
         <option value="$PROJECT_DIR$/app/Helpers/GetUserIp.php" />
@@ -200,6 +208,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PanelResponables/CreateTokenResponsable.php" />
         <option value="$PROJECT_DIR$/public/js/panel/index.js" />
         <option value="$PROJECT_DIR$/public/images/svg/sideTrigger.svg" />
+        <option value="$PROJECT_DIR$/public/js/panel/side_nav.js" />
       </list>
     </option>
   </component>
@@ -749,16 +758,16 @@
       <workItem from="1597595636078" duration="72616000" />
       <workItem from="1597918940455" duration="58900000" />
       <workItem from="1598169493764" duration="8616000" />
-      <workItem from="1598259437260" duration="71085000" />
+      <workItem from="1598259437260" duration="71654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211217000" />
+    <option name="totallyTimeSpent" value="211786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -769,7 +778,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171459" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Reviews" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1096,24 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="45" />
-          <folding>
-            <element signature="e#4563#4570#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="124" column="25" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/panel/billing.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1152,14 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1208,14 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/panel/side_nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/svg/trigger.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1224,21 +1199,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/svg/sideTrigger.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/panel/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
+        <state relative-caret-position="810">
           <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/panel/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/svg/sideTrigger.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/panel/side_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="124" column="25" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/panel/side_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
