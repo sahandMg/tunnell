@@ -42,22 +42,9 @@
     @endif
 </div>
 <script>
-
-    let user = @json($user);
-    let url = @json(route('sendMailConfAgain'));
-    let sendConfirmationEmail = function () {
-
-        axios.post(url,{'token':user.temp_token}).then(function (resp) {
-
-            let notifBox =  document.querySelector('div[class="notif-box"]').innerHTML = '';
-             notifBox =  document.querySelector('div[class="notif-box"]').innerHTML =
-                    '<div class="notif">'+
-                    '<span onclick="closeNotif(event)" class="close-notif">X</span>'+
-                    '<p>ایمیل تایید ارسال شد</p>'+
-                    '</div>';
-            autoShowNotif(undefined);
-        })
-    }
+    var token = @json($user->temp_token);
+    var url = @json(route('sendMailConfAgain'));
 </script>
+<script src="{{URL::asset('js/auth/confirmationEmail.js')}}"></script>
 </body>
 </html>

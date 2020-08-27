@@ -1,0 +1,62 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
+.billing-container .table-title {
+  font-family: panel-sans-b;
+  font-size: 24px;
+  color: rgba(23, 23, 23, 0.79);
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 10px; }
+
+.billing-container .token-table, .billing-container .token-table-vertical {
+  overflow-x: auto;
+  border: 5px solid #285d6d;
+  border-radius: 20px;
+  width: 100%;
+  margin: 100px auto;
+  color: rgba(23, 23, 23, 0.79);
+  text-align: center; }
+  @media screen and (max-width: 568px) {
+    .billing-container .token-table, .billing-container .token-table-vertical {
+      max-width: 568px;
+      display: none; } }
+  .billing-container .token-table thead, .billing-container .token-table-vertical thead {
+    font-family: panel-sans-b;
+    border-bottom: 1px solid gray; }
+  .billing-container .token-table tbody, .billing-container .token-table-vertical tbody {
+    font-family: panel-sans-r; }
+  .billing-container .token-table td, .billing-container .token-table-vertical td {
+    padding: 20px; }
+  .billing-container .token-table tr:nth-child(even), .billing-container .token-table-vertical tr:nth-child(even) {
+    background-color: #e6e6e6; }
+
+.billing-container .token-table-vertical {
+  display: none; }
+  @media screen and (max-width: 568px) {
+    .billing-container .token-table-vertical {
+      max-width: 568px;
+      display: table; } }
+  .billing-container .token-table-vertical tr {
+    background-color: #e6e6e6; }
+  @media screen and (max-width: 480px) {
+    .billing-container .token-table-vertical {
+      max-width: 480px;
+      width: 100%; } }

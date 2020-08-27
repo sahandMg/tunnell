@@ -1,0 +1,51 @@
+@import "../mixins";
+
+.billing-container{
+  .table-title{
+    font-family: $bold_font_panel;
+    font-size: $h2_size;
+    color: $font_dark_color;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .token-table{
+    overflow-x:auto;
+    border: 5px solid $bgColor3;
+    border-radius: 20px;
+    width: 100%;
+    margin: 100px auto;
+    color: $font_dark_color;
+    text-align: center;
+    @include semi_small_screen{
+      display: none;
+    }
+    thead{
+      font-family: $bold_font_panel;
+      border-bottom: 1px solid gray;
+    }
+    tbody{
+      font-family: $reg_font_panel;
+    }
+    td{
+      padding: 20px;
+      //border-collapse: collapse;
+    }
+    tr:nth-child(even){
+      background-color: lighten(gray,40);
+    }
+  }
+  .token-table-vertical{
+    display: none;
+    @extend .token-table;
+    @include semi_small_screen{
+      display: table;
+    }
+    tr{
+      background-color: lighten(gray,40);
+    }
+    @include extra_small_screen{
+      width: 100%;
+    }
+  }
+}

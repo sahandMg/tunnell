@@ -42,7 +42,7 @@ class MailConfirmationNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->from('sahand.mg.ne@gmail.com',env('APP_NAME'))
+            ->from(env('NO_REPLY'),env('APP_NAME'))
             ->subject('تایید ایمیل کاربر')
             ->view('emails.mailConfirmation',['user'=>$this->user]);
     }

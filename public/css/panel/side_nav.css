@@ -1,0 +1,148 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
+.side-nav-responsive {
+  display: none; }
+  @media screen and (max-width: 780px) {
+    .side-nav-responsive {
+      max-width: 780px; } }
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 15%;
+  background-color: #50c2ba;
+  height: 100%;
+  padding: 10px 1%;
+  border-left: 5px solid #285d6d; }
+  @media screen and (max-width: 1399px) {
+    .side-nav {
+      max-width: 1399px;
+      width: 20%; } }
+  @media screen and (max-width: 1025px) {
+    .side-nav {
+      max-width: 1025px;
+      width: 25%; } }
+  @media screen and (max-width: 780px) {
+    .side-nav {
+      max-width: 780px;
+      visibility: hidden;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      flex-basis: 30%; } }
+  @media screen and (max-width: 568px) {
+    .side-nav {
+      max-width: 568px;
+      width: 45%; } }
+  @media screen and (max-width: 480px) {
+    .side-nav {
+      max-width: 480px;
+      width: 40%; } }
+  .side-nav .side-nav-ul-container {
+    position: relative;
+    top: 10%; }
+    @media screen and (max-width: 1025px) {
+      .side-nav .side-nav-ul-container {
+        max-width: 1025px;
+        top: 15%; } }
+    @media screen and (max-width: 667px) {
+      .side-nav .side-nav-ul-container {
+        max-width: 667px;
+        top: 15%; } }
+    .side-nav .side-nav-ul-container .side-ul-avatar .avatar-container {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border: 4px solid white;
+      border-radius: 100px;
+      text-align: center;
+      background-image: url("../../images/png/avatars/avatar6.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #285d6d; }
+      @media screen and (max-width: 1025px) {
+        .side-nav .side-nav-ul-container .side-ul-avatar .avatar-container {
+          max-width: 1025px;
+          width: 80px;
+          height: 80px; } }
+    .side-nav .side-nav-ul-container .side-ul-avatar .charge-side {
+      text-align: center;
+      color: white;
+      font-family: panel-sans-b;
+      margin-top: 10px;
+      direction: rtl;
+      font-size: 14px; }
+      @media screen and (max-width: 1025px) {
+        .side-nav .side-nav-ul-container .side-ul-avatar .charge-side {
+          max-width: 1025px;
+          font-size: 12px; } }
+    .side-nav .side-nav-ul-container .side-ul-items {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 18px;
+      font-family: panel-sans-b;
+      text-align: center; }
+      .side-nav .side-nav-ul-container .side-ul-items a {
+        text-decoration: none;
+        color: white;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: panel-sans-b;
+        font-size: 18px;
+        width: 100%; }
+        @media screen and (max-width: 1280px) {
+          .side-nav .side-nav-ul-container .side-ul-items a {
+            max-width: 1280px;
+            font-size: 15px; } }
+        @media screen and (max-width: 1025px) {
+          .side-nav .side-nav-ul-container .side-ul-items a {
+            max-width: 1025px;
+            font-size: 14px; } }
+        .side-nav .side-nav-ul-container .side-ul-items a:hover {
+          background-color: #285d6d; }
+        .side-nav .side-nav-ul-container .side-ul-items a i {
+          float: right; }
+      .side-nav .side-nav-ul-container .side-ul-items li {
+        margin: 30px auto;
+        border-radius: 10px;
+        width: 100%;
+        border: 2px solid white; }
+        @media screen and (max-width: 1280px) {
+          .side-nav .side-nav-ul-container .side-ul-items li {
+            max-width: 1280px;
+            margin: 25px auto; } }
+        @media screen and (max-width: 1025px) {
+          .side-nav .side-nav-ul-container .side-ul-items li {
+            max-width: 1025px;
+            margin: 20px auto; } }
+        @media screen and (max-width: 667px) {
+          .side-nav .side-nav-ul-container .side-ul-items li {
+            max-width: 667px;
+            margin: 10px auto; } }

@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\AuthResponsables\forgetPass;
 use App\Http\Controllers\AuthResponsables\mailRedirect;
+use App\Http\Controllers\AuthResponsables\sendMailConfAgain;
+use App\Http\Requests\forgetPassRequest;
 use App\Http\Requests\SigninRequest;
 use App\Http\Requests\SingupRequest;
+use App\Notifications\ForgetPassNotification;
 use App\Notifications\MailConfirmationNotification;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AuthResponsables\Signup;
 use App\Http\Controllers\AuthResponsables\Signin;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -47,17 +52,7 @@ class AuthController extends Controller
 
     public function sendMailConfAgain(Request $request){
 
-        try{
-
-            $token = $request->token;
-            $user = User::where('temp_token',$token)->firstOrFail();
-            $user->notify(new MailConfirmationNotification($user));
-        }catch (\Error $e){
-
-            return $e->getMessage();
-        }
-
-        return 200;
+      return new sendMailConfAgain();
     }
 
     public function forgetPassword(){
@@ -65,9 +60,9 @@ class AuthController extends Controller
         return view('auth.forgetpassword');
     }
 
-    public function post_forgetPassword(){
+    public function post_forgetPassword(forgetPassRequest $fr){
 
-        return view('auth.forgetpassword');
+       return new forgetPass();
     }
 
     public function logout(){

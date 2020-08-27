@@ -51,7 +51,7 @@ return [
         'array' => 'The :attribute must have more than :value items.',
     ],
     'gte' => [
-        'numeric' => 'The :attribute must be greater than or equal :value.',
+        'numeric' => 'مقدار :attribute باید حداقل :value تومان باشد',
         'file' => 'The :attribute must be greater than or equal :value kilobytes.',
         'string' => 'The :attribute must be greater than or equal :value characters.',
         'array' => 'The :attribute must have :value items or more.',
@@ -167,7 +167,8 @@ return [
         'unique_id'=>'شناسه یکتای دستگاه',
         'fcm_token'=>'شناسه fcm',
         'filter_name'=>'نام فیلتر',
-        'key'=>'کلید ادمین'
+        'key'=>'کلید ادمین',
+        'charge'=>'شارژ'
     ],
 
 ];

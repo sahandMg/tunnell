@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','verified'
+        'name', 'email', 'password','verified' , 'tokens_disabled'
     ];
 
     /**
@@ -44,6 +44,6 @@ class User extends Authenticatable
         return $this->hasOne(Wallet::class);
     }
     public function transactions(){
-        return $this->hasMany(Transactions::class);
+        return $this->hasMany(Transaction::class);
     }
 }

@@ -1,5 +1,6 @@
-@extends('panel.master.layout')
-@section('bodyContent')
+@extends('panel.master')
+@section('panelBody')
+    <div class="tutorial-container">
 
-    <h1>Some Tuts here</h1>
+    </div>
 @endsection

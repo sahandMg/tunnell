@@ -1,0 +1,150 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 1920px;
+  background-color: whitesmoke;
+  height: 100%; }
+
+*, *:after, *:before {
+  box-sizing: inherit; }
+
+.panel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 100%; }
+
+.side-nav-trigger {
+  visibility: hidden;
+  width: 5%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  transform: rotate(90deg);
+  z-index: 10; }
+  @media screen and (max-width: 780px) {
+    .side-nav-trigger {
+      max-width: 780px;
+      visibility: visible; } }
+  @media screen and (max-width: 480px) {
+    .side-nav-trigger {
+      max-width: 480px;
+      width: 10%; } }
+
+.body-container {
+  flex-basis: 80%;
+  margin: 0 auto;
+  padding: 10px; }
+  @media screen and (max-width: 780px) {
+    .body-container {
+      max-width: 780px;
+      flex-basis: 100%; } }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content */
+  /* The Close Button */ }
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center; }
+    @media screen and (max-width: 667px) {
+      .modal .modal-content {
+        max-width: 667px;
+        width: 85%; } }
+  .modal .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; }
+  .modal .close:hover,
+  .modal .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+  .modal .topup {
+    font-family: sans-b; }
+    .modal .topup form {
+      width: 50%;
+      margin: auto;
+      padding: 10px; }
+      @media screen and (max-width: 1280px) {
+        .modal .topup form {
+          max-width: 1280px;
+          width: 80%; } }
+      @media screen and (max-width: 480px) {
+        .modal .topup form {
+          max-width: 480px;
+          width: 100%; } }
+      .modal .topup form input {
+        width: 100%;
+        margin: 5% auto;
+        border: 1px solid rgba(23, 23, 23, 0.79);
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 18px; }
+        @media screen and (max-width: 480px) {
+          .modal .topup form input {
+            max-width: 480px;
+            font-size: 14px; } }
+      .modal .topup form label {
+        display: block; }
+        @media screen and (max-width: 480px) {
+          .modal .topup form label {
+            max-width: 480px;
+            font-size: 14px; } }
+    .modal .topup .btn {
+      border: 2px solid #50c2ba;
+      width: 100%;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 10px;
+      color: rgba(23, 23, 23, 0.79);
+      font-family: panel-sans-b; }

@@ -1,41 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Remote;
+namespace App\Http\Controllers;
 
-use App\RemotePaymentGate\Paystar;
-use App\RemotePaymentGate\ZarrinPal;
+use App\Transaction;
+use App\Zarrin;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
 
 class TransactionController extends Controller
 {
-    public function __construct()
-    {
-
-        $this->middleware('remoteAuth');
-    }
-    public function successPayment($lang,$id){
-        $trans = DB::connection('mysql')->table('remote_transactions')->where('code',$id)->first();
-        if(is_null($trans)){
-            return 'تراکنش نامعتبر';
-        }
-        $code = $trans->code;
-        return view('remote.payment.success',compact('code'));
-    }
-
-    public function failedPayment($lang,$id){
-        $trans = DB::connection('mysql')->table('remote_transactions')->where('code',$id)->first();
-        if(is_null($trans)){
-            return 'تراکنش نامعتبر';
-        }
-        $code = $trans->code;
-        return view('remote.payment.failed',compact('code'));
-    }
 
     public function ZarrinPalPaying(Request $request){
 
-        $zarrin = new ZarrinPal($request);
+        $this->validate($request,[
+            'charge'=>'gte:1000'
+        ]);
+        $zarrin = new Zarrin($request->all());
         $result = $zarrin->create();
         if($result != 404){
             $request->session()->save();
@@ -47,30 +26,28 @@ class TransactionController extends Controller
 
     public function ZarrinCallback(Request $request){
 
-        $zarrin = new ZarrinPal($request);
+        $zarrin = new Zarrin($request->all());
 
         return $zarrin->verify();
     }
 
-    public function PaystarPaying(Request $request){
+    public function successPayment($id){
 
-        $payStar = new Paystar($request);
-        $result = $payStar->create();
-        if($result != 404){
-            $request->session()->save();
-
-            return redirect()->to('https://paystar.ir/paying/'.$result);
-        }else{
-            return 'مشکلی در پرداخت پیش آمده';
+        $trans = Transaction::where('order_num',$id)->first();
+        if(is_null($trans)){
+            return 'تراکنش نامعتبر';
         }
+        $code = $trans->order_num;
+        return view('transactions.paymentSuccess',compact('code'));
     }
 
-
-    public function PaystarCallback(Request $request){
-
-        $payStar = new Paystar($request);
-
-        return $payStar->verify();
-
+    public function failedPayment($id){
+        $trans = Transaction::where('order_num',$id)->first();
+        if(is_null($trans)){
+            return 'تراکنش نامعتبر';
+        }
+        $code = $trans->order_num;
+        return view('transactions.paymentFailed',compact('code'));
     }
+
 }

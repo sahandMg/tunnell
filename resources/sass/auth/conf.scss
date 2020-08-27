@@ -16,11 +16,22 @@ html, body {
   color: $font_light_color;
   h1{
     margin-top: 20px;
-    line-height:2
+    line-height:2;
+    @include semi_medium_screen{
+    text-align: center;
+    }
+    @include small_screen{
+      font-size: $h3_size + 2px;
+    }
+    @include extra_small_screen{
+      font-size: $h3_size;
+    }
+    @include super_small_screen{
+
+      font-size: $h3_size - 3px;
+    }
   }
-  @include extra_small_screen{
-    font-size: $h2_size - 2px;
-  }
+
 }
 .box-logo{
   background-color: red;
@@ -43,7 +54,6 @@ html, body {
   font-size: $h3-size - 3px;
   color: $font_dark_color;
   direction: rtl;
-
   @include semi_large_screen{
     transform: translateY(-45%);
   }
@@ -80,12 +90,16 @@ html, body {
         border: 3px solid $font_light_color;
         @include hooverTransition;
         @include removeLinkStyle($font_light_color);
+        @include semi_medium_screen{
+          margin: 10px auto;
+        }
         @include extra_small_screen{
           font-size: $h4_size;
         }
         @include super_small_screen{
           font-size: $h4_size - 2px;
           padding: 7px 0;
+          width: 50%;
         }
         &:hover{
           background-color: $btnBgColor3;

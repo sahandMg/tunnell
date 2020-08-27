@@ -39,6 +39,33 @@
 
 }
 
+@mixin btnStyle1{
+
+  border: 2px solid $font_light_color;
+  border-radius: 10px;
+  padding: 10px 2%;
+  text-align: center;
+  cursor: pointer;
+  //background-color:transparent ;
+  @include hooverTransition;
+
+}
+
+@mixin btnStyle2{
+
+  border: 2px solid $font_light_color;
+  color: $font_light_color;
+  border-radius: 10px;
+  padding: 10px 2%;
+  width: 30%;
+  text-align: center;
+  background-color: $btnBgColor2 ;
+  font-family: $bold_font;
+  cursor: pointer;
+  @include hooverTransition;
+
+}
+
 @mixin large_screen{
   @media screen and (min-width: 1400px)  {
     @content ;
@@ -66,6 +93,16 @@
     @content ;
   }
 }
+
+@mixin strange_small_screen{
+
+  //@media screen and (min-width: 768px) and (max-device-width : 1024px)  {
+  @media screen and (max-width : 780px)  {
+    max-width: 780px;
+    @content ;
+  }
+}
+
 @mixin small_screen(){
   @media screen and (max-width: 667px) {
     max-width: 667px;

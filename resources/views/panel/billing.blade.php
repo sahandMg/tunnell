@@ -1,78 +1,69 @@
-@extends('panel.master.layout')
-@section('bodyContent')
+@extends('panel.master')
+@section('panelBody')
+    <div class="billing-container">
+        <table class="token-table">
+            <caption class="table-title">لیست تراکنش ها</caption>
+            <thead>
+            <tr>
+                <td>تاریخ</td>
+                <td>کد پیگیری</td>
+                <td>وضعیت</td>
+                <td>مبلغ</td>
+                <td>ردیف</td>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($user->transactions as $index=>$transaction)
+                <tr class="text-center">
+                    <td>{{\Morilog\Jalali\Jalalian::fromCarbon(\Carbon\Carbon::parse($transaction->created_at))->format('Y-m-d')}}</td>
+                    <td>{{$transaction->order_num}}</td>
+                    <td style="{{$transaction->status == 'paid'?'color:green':($transaction->status == 'canceled'?'color:gray':'color:red')}}">{{$transaction->status == 'paid'?'موفق':($transaction->status == 'canceled'?'لغو':'ناموفق')}}</td>
+                    <td><span>{{$transaction->amount}}</span> تومان</td>
+                    <td><span>{{$index+1}}</span></td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
 
-    <div class="section__content section__content--p30">
-        <div class="container-fluid">
+        <table class="token-table-vertical">
+            <caption class="table-title">لیست توکن ها</caption>
 
-            <div class="row" style="direction: rtl;">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="title-1 m-b-25 text-right" style="direction: rtl;">لیست تراکنش ها
-                            </h2>
-                        </div>
-                        <div class="col-md-6 text-left">
-                            <button  type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">شارژ کیف پول</button>
-                        </div>
-                    </div>
+            <tbody>
 
-                    <div class="table-responsive table--no-card m-b-40">
-                        <table class="table table-borderless table-striped table-earning">
-                            <thead>
-                                <tr class="text-center">
-                                    <th>مقدار</th>
-                                    <th>شرح</th>
-                                    <th>وضعیت</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($user->transactions as $transaction)
-                                <tr class="text-center">
-                                    <td><span>{{$transaction->amount}}</span> تومان</td>
-                                    <td>شارژ اکانت</td>
-                                    <td style="{{$transaction->status == 'paid'?'color:green':($transaction->status == 'canceled'?'color:gray':'color:red')}}">{{$transaction->status == 'paid'?'موفق':($transaction->status == 'canceled'?'لغو':'ناموفق')}}</td>
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <br />
-            <br />
+            @foreach($user->transactions as $index=>$transaction)
 
-        </div>
+                <tr>
+                    <td>{{$index+1}}</td>
+                    <td>ردیف</td>
+                </tr>
+                <tr>
+                    <td><span>{{$transaction->amount}}</span></td>
+                    <td>مبلغ</td>
+                </tr>
+                <tr>
+                    <td style="{{$transaction->status == 'paid'?'color:green':($transaction->status == 'canceled'?'color:gray':'color:red')}}">{{$transaction->status == 'paid'?'موفق':($transaction->status == 'canceled'?'لغو':'ناموفق')}}</td>
+                    <td>وضعیت</td>
+                </tr>
+                <tr>
+                    <td>{{$transaction->order_num}}</td>
+                    <td>کد پیگیری</td>
+
+                </tr>
+                <tr>
+                    <td>{{\Morilog\Jalali\Jalalian::fromCarbon(\Carbon\Carbon::parse($transaction->created_at))->format('Y-m-d')}}</td>
+                    <td>تاریخ</td>
+
+                </tr>
+
+                <tr style="background-color: white">
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            @endforeach
+
+            </tbody>
+
+        </table>
     </div>
-
-            <!-- The Modal -->
-            <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title text-center">شارژ کیف پول</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <div class="row mx-auto text-center" style="direction: rtl;margin: auto;">
-                                <input name="chargeValue" type="number" class="form-control col-md-5" aria-required="true" aria-invalid="false" value="10000" min="10000" />
-                                <span style="margin-right: 10px;">تومان</span>
-                            </div>
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer text-center">
-                            <button  type="button" class="btn btn-success">شارژ کیف پول</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
 @endsection

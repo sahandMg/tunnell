@@ -6,6 +6,14 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
 html, body {
   max-width: 1920px;
   margin: auto; }

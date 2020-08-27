@@ -1,5 +1,7 @@
 <?php
 
+use App\Notifications\InvoiceMailNotification;
+use App\Transaction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +22,8 @@ Route::get('test',function(){
 //        $message->from('support@joyvpn.xyz');
 //        $message->subject('ایمیل تایید');
 //    });
-    return view('panel.index');
+    $user = \App\User::find(1);
+
 });
 Route::get('/', function () {
     return view('layouts.footer');
@@ -59,11 +62,17 @@ Route::group(['middleware'=>'auth'],function(){
 
     Route::get('transactions',[\App\Http\Controllers\PanelController::class,'Transactions'])->name('TransactionsList');
 
-    Route::get('zarrin/paying', 'TransactionController@ZarrinPalPaying')->name('RemoteZarrinPalPaying');
+    Route::post('zarrin/paying', 'TransactionController@ZarrinPalPaying')->name('ZarrinPalPaying');
 
-    Route::get('zarrin/callback', 'TransactionController@ZarrinCallback')->name('RemoteZarrinCallback');
+    Route::get('zarrin/callback', 'TransactionController@ZarrinCallback')->name('ZarrinCallback');
 
-    Route::get('paystar/paying', 'TransactionController@PaystarPaying')->name('RemotePaystarPaying');
+    Route::get('zarrin/payment/success',[\App\Transaction::class,'successPayment'])->name('successPayment');
+
+    Route::get('zarrin/payment/fail',[\App\Transaction::class,'FailedPayment'])->name('FailedPayment');
+
+    Route::post('change-token-state',[\App\Http\Controllers\PanelController::class,'ChangeTokenState'])->name('tokenState');
+
+    Route::post('create-token',[\App\Http\Controllers\PanelController::class,'CreateToken'])->name('createToken');
 
     Route::get('logout', ['as' => 'logout', 'uses' => 'AuthController@logout']);
 });

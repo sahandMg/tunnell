@@ -1,0 +1,160 @@
+@import "../mixins";
+.top-nav{
+  background-image: linear-gradient(45deg,$header_color1,$header_color2);
+  padding: 10px 1%;
+  display: flex;
+  color: $font_light_color;
+  font-family: $bold_font_panel;
+  align-items: center;
+  border-bottom: 5px solid $bgColor4;
+  box-shadow: 0 2px 10px black;
+  position: relative;
+  z-index: 2;
+  .user-ul{
+    @include small_screen{
+      display: none;
+    }
+    flex-basis: 50%;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    @include semi_medium_screen{
+      flex-basis: 60%;
+    }
+    li{
+      margin: 0 1%;
+    }
+    .name-li{
+      cursor: pointer;
+      .user-info-modal-ul{
+        cursor: default;
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        background-color: whitesmoke;
+        border: 5px solid $font_dark_color;
+        border-radius: 10px;
+        color: $bgColor5;
+        font-size: $h4_size;
+        font-family: $reg_font_panel;
+        padding: 20px;
+        position: absolute;
+        z-index: 5;
+        top:$modal_top;
+        width: 15%;
+        .modal-link{
+          width: 80%;
+          margin: 20px auto;
+          text-align: center;
+          a{
+            @include removeLinkStyle($font_dark_color);
+            display: inline-block;
+            width: 80%;
+          }
+          i{
+            float: right;
+            font-size: $h3_size;
+          }
+        }
+        .avatar-li{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-bottom: 1px solid gray;
+          padding-bottom: 5px;
+          margin-top: 0;
+          .modal-avatar {
+            flex-basis: 20%;
+            img{
+              width: 100%;
+            }
+          }
+          .modal-user-info{
+            flex-basis: 30%;
+            text-align: center;
+            h3{
+              font-family: $bold_font_panel;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    .wallet-charge{
+      margin: 0 1% 0 10%;
+      @include strange_small_screen{
+        display: none;
+      }
+    }
+    .charge-btn{
+      @include btnStyle1;
+      @include strange_small_screen{
+        display: none;
+      }
+      font-size: $h4_size;
+      padding: 5px;
+      width: 15%;
+      &:hover{
+        background-color: $btnBgColor3;
+      }
+    }
+  }
+  .logo-ul{
+
+    padding: 10px;
+    flex-basis: 50%;
+    list-style: none;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    @include semi_medium_screen{
+      flex-basis: 30%;
+      margin: auto;
+    }
+    @include strange_small_screen{
+      flex-basis: 50%;
+    }
+    @include small_screen{
+      justify-content: center;
+      margin: auto;
+    }
+    li{
+      margin: 0 1%;
+    }
+  }
+  .topup{
+    position: absolute;
+    cursor: default;
+    visibility: hidden;
+    opacity: 0;
+    top:$modal_top;
+    border: 5px solid $bgColor5;
+    border-radius: 10px;
+    color: $font_dark_color;
+    font-family: $reg_font_panel;
+    background-color: whitesmoke;
+    form{
+      input{
+        margin: 10px;
+        border: 1px solid $font_dark_color;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      label{
+        display: block;
+      }
+    }
+    .btn{
+      border: 2px solid $bgColor4;
+      width: 50%;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 10px;
+      color: $font_dark_color;
+      font-family: $bold_font_panel;
+    }
+  }
+}

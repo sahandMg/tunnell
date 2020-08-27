@@ -1,6 +1,7 @@
 @import "../mixins";
 .notif-box{
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 5px;
   width: 20%;

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.621 62.621">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: rgb(40, 93, 109);
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: rgb(40, 93, 109);;
+      }
+      <circle id="main-circle" class="cls-1" cx="0" cy="0" r="20" transform="translate(31.311 31.311)"/>
+    </style>
+  </defs>
+  <title>trigger</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <g>
+          <use href="main-circle"/>
+          <circle class="cls-1" cx="0" cy="0" r="20" transform="translate(31.311 31.311)">
+            <animateTransform attributeName="transform" type="scale" additive="sum" dur="1s" from="1" to="1.5" repeatCount="indefinite"/>
+            <animate attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <path class="cls-2" d="M33.358,37.171a2.364,2.364,0,0,1-4.095,0l-2.7-4.678-2.7-4.679a2.363,2.363,0,0,1,2.047-3.545h10.8a2.364,2.364,0,0,1,2.048,3.545l-2.7,4.679Z"/>
+          <!--<animateTransform attributeType="XML" attributeName="transform" type="scale" additive="sum" from="0.5" to="1" dur="1s" repeatCount="indefinite" ></animateTransform>-->
+          <!--<animate attributeType="css" attributeName="opacity" from="1" to="0" dur="1s" repeatCount="indefinite"></animate>-->
+        </g>
+
+      </g>
+    </g>
+  </g>
+</svg>

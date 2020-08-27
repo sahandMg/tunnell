@@ -24,7 +24,7 @@
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
                         <label for="name">نام کاربری</label>
-                        <input name="name" type="text" class="form-control" required value="{{Request::old('name')}}" id="name"  placeholder="نام کاربری خود را وارد کنید">
+                        <input name="name" type="text" class="form-control" maxlength="30" required value="{{Request::old('name')}}" id="name"  placeholder="نام کاربری خود را وارد کنید">
                     </div>
                     <div class="form-group">
                         <label for="email">ایمیل</label>

@@ -1,0 +1,97 @@
+@import "../mixins";
+
+.dashboard-container{
+  padding-top: 50px;
+  .token-btn{
+    text-align: right;
+    button{
+      @include btnStyle2;
+      width: 15%;
+      font-size: $h4_size;
+      direction: rtl;
+      &:hover{
+        background-color: $bgColor3;
+        @include hooverTransition
+      }
+      @include semi_medium_screen{
+        width: 25%;
+      }
+      @include extra_small_screen{
+
+        width: 30%;
+      }
+    }
+  }
+  .charge-alert{
+    background-color: #ffd1ca;
+    color: #8d0000;
+    font-family: $bold_font_panel;
+    padding: 15px;
+    font-size: $h4_size;
+    text-align: center;
+    border-radius: 10px;
+    p{
+      line-height: 1.5;
+    }
+  }
+  .table-title{
+    font-family: $bold_font_panel;
+    font-size: $h2_size;
+    color: $font_dark_color;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .token-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 5px solid $bgColor3;
+    border-radius: 10px;
+    width: 100%;
+    margin: 100px auto;
+    color: $font_dark_color;
+    text-align: center;
+    @include semi_small_screen{
+      display: none;
+    }
+    thead{
+      font-family: $bold_font_panel;
+      border-bottom: 1px solid gray;
+    }
+    tbody{
+      font-family: $reg_font_panel;
+    }
+    td{
+      padding: 20px;
+      //border-collapse: collapse;
+    }
+    tr:nth-child(even){
+      background-color: lighten(gray,40);
+    }
+    .red-status-td{
+      padding: 10px;
+      background-image: url('../../images/svg/redStatus.svg');
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    .green-status-td{
+      @extend .red-status-td;
+      background-image: url('../../images/svg/greenStatus.svg');
+    }
+  }
+  .token-table-vertical{
+    display: none;
+    @extend .token-table;
+    @include semi_small_screen{
+      display: table;
+    }
+    tr{
+      background-color: lighten(gray,40);
+    }
+    @include extra_small_screen{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../mixins";
+
+.side-nav-responsive{
+  display: none;
+  @include strange_small_screen{
+    //display: block;
+  }
+}
+.side-nav{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: $side_nav_width;
+  background-color: $bgColor4;
+  height: 100%;
+  padding: 10px 1%;
+  border-left: 5px solid $bgColor3;
+  @include semi_large_screen{
+    width: $side_nav_width + 5%;
+  }
+  @include semi_medium_screen{
+    width: $side_nav_width + 10%;
+  }
+  @include strange_small_screen{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    flex-basis: $side_nav_width + 15%;
+  }
+  @include semi_small_screen{
+    width: $side_nav_width + 30%;
+  }
+  @include extra_small_screen{
+    width: $side_nav_width + 25%;
+  }
+  .side-nav-ul-container{
+    position: relative;
+    top: 10%;
+    @include semi_medium_screen{
+      top: 15%;
+    }
+    @include small_screen{
+      top: 15%;
+    }
+    .side-ul-avatar{
+      .avatar-container{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 4px solid $nav_hover_color;
+        border-radius: 100px;
+        text-align: center;
+        //background-image: url("../../images/svg/raspberry-pi.svg");
+        background-image: url("../../images/png/avatars/avatar6.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $bgColor3;
+        @include semi_medium_screen{
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .charge-side{
+        text-align: center;
+        color: $font_light_color;
+        font-family: $bold_font_panel;
+        margin-top: 10px;
+        direction: rtl;
+        font-size: $h4_size;
+        @include semi_medium_screen{
+          font-size: $h4_size - 2px;
+        }
+      }
+
+    }
+    .side-ul-items{
+      display: flex;
+      flex-direction: column;
+      color: $font_light_color;
+      font-size: $h3_size;
+      font-family: $bold_font_panel;
+      text-align: center;
+      a{
+        @include removeLinkStyle($font_light_color);
+        @include hooverTransition;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: $bold_font_panel;
+        font-size: $h3_size;
+        width: 100%;
+        @include medium_screen{
+          font-size: $h3_size - 3px;
+        }
+        @include semi_medium_screen{
+          font-size: $h4_size;
+        }
+        &:hover{
+          background-color: $bgColor3;
+        }
+        i{
+          float: right;
+          //margin: 0 10%;
+        }
+      }
+      li{
+        margin: 30px auto;
+        border-radius: 10px;
+        width: 100%;
+        border: 2px solid $nav_hover_color;
+        @include medium_screen{
+          margin: 25px auto;
+        }
+        @include semi_medium_screen{
+          margin: 20px auto;
+        }
+        @include small_screen{
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+}

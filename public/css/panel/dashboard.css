@@ -1,0 +1,117 @@
+@font-face {
+  font-family: sans-r;
+  src: url("../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: sans-b;
+  src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
+html, body {
+  max-width: 1920px;
+  margin: auto; }
+
+.dashboard-container {
+  padding-top: 50px; }
+  .dashboard-container .token-btn {
+    text-align: right; }
+    .dashboard-container .token-btn button {
+      border: 2px solid white;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 2%;
+      width: 30%;
+      text-align: center;
+      background-color: #03A293;
+      font-family: sans-b;
+      cursor: pointer;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      width: 15%;
+      font-size: 14px;
+      direction: rtl; }
+      .dashboard-container .token-btn button:hover {
+        background-color: #285d6d;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in; }
+      @media screen and (max-width: 1025px) {
+        .dashboard-container .token-btn button {
+          max-width: 1025px;
+          width: 25%; } }
+      @media screen and (max-width: 480px) {
+        .dashboard-container .token-btn button {
+          max-width: 480px;
+          width: 30%; } }
+  .dashboard-container .charge-alert {
+    background-color: #ffd1ca;
+    color: #8d0000;
+    font-family: panel-sans-b;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px; }
+    .dashboard-container .charge-alert p {
+      line-height: 1.5; }
+  .dashboard-container .table-title {
+    font-family: panel-sans-b;
+    font-size: 24px;
+    color: rgba(23, 23, 23, 0.79);
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 10px; }
+  .dashboard-container .token-table, .dashboard-container .token-table-vertical {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 5px solid #285d6d;
+    border-radius: 10px;
+    width: 100%;
+    margin: 100px auto;
+    color: rgba(23, 23, 23, 0.79);
+    text-align: center; }
+    @media screen and (max-width: 568px) {
+      .dashboard-container .token-table, .dashboard-container .token-table-vertical {
+        max-width: 568px;
+        display: none; } }
+    .dashboard-container .token-table thead, .dashboard-container .token-table-vertical thead {
+      font-family: panel-sans-b;
+      border-bottom: 1px solid gray; }
+    .dashboard-container .token-table tbody, .dashboard-container .token-table-vertical tbody {
+      font-family: panel-sans-r; }
+    .dashboard-container .token-table td, .dashboard-container .token-table-vertical td {
+      padding: 20px; }
+    .dashboard-container .token-table tr:nth-child(even), .dashboard-container .token-table-vertical tr:nth-child(even) {
+      background-color: #e6e6e6; }
+    .dashboard-container .token-table .red-status-td, .dashboard-container .token-table-vertical .red-status-td, .dashboard-container .token-table .green-status-td, .dashboard-container .token-table-vertical .green-status-td {
+      padding: 10px;
+      background-image: url("../../images/svg/redStatus.svg");
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer; }
+    .dashboard-container .token-table .green-status-td, .dashboard-container .token-table-vertical .green-status-td {
+      background-image: url("../../images/svg/greenStatus.svg"); }
+  .dashboard-container .token-table-vertical {
+    display: none; }
+    @media screen and (max-width: 568px) {
+      .dashboard-container .token-table-vertical {
+        max-width: 568px;
+        display: table; } }
+    .dashboard-container .token-table-vertical tr {
+      background-color: #e6e6e6; }
+    @media screen and (max-width: 480px) {
+      .dashboard-container .token-table-vertical {
+        max-width: 480px;
+        width: 100%; } }

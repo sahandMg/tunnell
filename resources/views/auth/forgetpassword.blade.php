@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{URL::asset('css/signin.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/reset.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/notification.css')}}">
     <title>ورود</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                <h1>LOGO HERE</h1>
            </div>
 
-            <form method="POST" action="{{route('signin')}}">
+            <form method="POST" action="{{route('fpass')}}">
                 <h2 class="login-title">بازیابی کلمه عبور</h2>
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <div class="form-group">
@@ -39,6 +40,23 @@
         <div class="fpass-image">
             <img src="{{URL::asset('images/svg/key.svg')}}" alt="">
         </div>
+    </div>
+    <div class="notif-box">
+        @if(count($errors->all()) > 0)
+            @foreach($errors->all() as $error)
+                <div class="notif">
+                    <span onclick="closeNotif(event)" class="close-notif">X</span>
+                    <p>{{ $error }}</p>
+                </div>
+            @endforeach
+            <script src="{{URL::asset('js/notification/index.js')}}"></script>
+        @elseif(session()->has('message'))
+            <div class="notif">
+                <span onclick="closeNotif(event)" class="close-notif">X</span>
+                <p>{{session('message')}}</p>
+            </div>
+            <script src="{{URL::asset('js/notification/index.js')}}"></script>
+        @endif
     </div>
 </div>
 {{--<script src="{{URL::asset('js/auth/login.js')}}"></script>--}}

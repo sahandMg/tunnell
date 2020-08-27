@@ -6,6 +6,14 @@
   font-family: sans-b;
   src: url("../fonts/woff/IRANSansWeb_Bold.woff"); }
 
+@font-face {
+  font-family: panel-sans-r;
+  src: url("../../fonts/woff/IRANSansWeb.woff"); }
+
+@font-face {
+  font-family: panel-sans-b;
+  src: url("../../fonts/woff/IRANSansWeb_Bold.woff"); }
+
 html, body {
   max-width: 1920px;
   margin: auto; }
@@ -28,10 +36,22 @@ html, body {
   .login-title h1 {
     margin-top: 20px;
     line-height: 2; }
-  @media screen and (max-width: 480px) {
-    .login-title {
-      max-width: 480px;
-      font-size: 22px; } }
+    @media screen and (max-width: 1025px) {
+      .login-title h1 {
+        max-width: 1025px;
+        text-align: center; } }
+    @media screen and (max-width: 667px) {
+      .login-title h1 {
+        max-width: 667px;
+        font-size: 20px; } }
+    @media screen and (max-width: 480px) {
+      .login-title h1 {
+        max-width: 480px;
+        font-size: 18px; } }
+    @media screen and (max-width: 368px) {
+      .login-title h1 {
+        max-width: 368px;
+        font-size: 15px; } }
 
 .box-logo {
   background-color: red;
@@ -109,6 +129,10 @@ html, body {
         transition: all 0.5s ease-in;
         text-decoration: none;
         color: white; }
+        @media screen and (max-width: 1025px) {
+          .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
+            max-width: 1025px;
+            margin: 10px auto; } }
         @media screen and (max-width: 480px) {
           .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
             max-width: 480px;
@@ -117,7 +141,8 @@ html, body {
           .login-container .login-box .alter-login .google, .login-container .login-box .alter-login .github {
             max-width: 368px;
             font-size: 12px;
-            padding: 7px 0; } }
+            padding: 7px 0;
+            width: 50%; } }
         .login-container .login-box .alter-login .google:hover, .login-container .login-box .alter-login .github:hover {
           background-color: #285d6d;
           -webkit-transition: all 0.5s ease-in;

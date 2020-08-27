@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->boolean('verified')->default(0);
             $table->string('temp_token');
             $table->string('password');
+            $table->boolean('tokens_disabled')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,5 +1,6 @@
-var notifBoxes = document.querySelectorAll('div[class="notif"]');
-let autoShowNotif = function (mystl = undefined) {
+console.log('notif')
+let notifBoxes = document.querySelectorAll('div[class="notif"]');
+var autoShowNotif = function (mystl = undefined) {
     if(mystl == undefined){
         var stl = {
             'transform':`translate(0,0)`,
