@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Controllers\PanelResponsables\BillingHandler;
+use App\Http\Controllers\PanelResponsables\CreateTokenResponsable;
 use App\Http\Controllers\PanelResponsables\Tutorials;
 use App\Token;
 use App\User;
@@ -60,18 +61,7 @@ class PanelController extends Controller
 
     public function CreateToken(Request $request){
 
-        $wallet = Auth::user()->wallet;
-        if($wallet->charge < env('WALLET_CHARGE_THRESHOLD')){
-
-            return ['type'=>'error','message'=>'حداقل شارژ برای ساخت توکن، '.env('WALLET_CHARGE_THRESHOLD').' تومان می‌باشد'];
-        }
-        $token = new Token();
-        $token->code = strtoupper(uniqid());
-        $token->address = env('TUNNEL_IP');
-        $token->status = 1;
-        $token->user_id = Auth::id();
-        $token->save();
-        return Auth::user()->tokens;
+       return new CreateTokenResponsable();
     }
   public function Transactions(){
 

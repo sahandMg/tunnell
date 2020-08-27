@@ -22,7 +22,7 @@
     width: $side_nav_width + 10%;
   }
   @include strange_small_screen{
-    //visibility: hidden;
+    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;

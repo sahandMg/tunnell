@@ -77,8 +77,6 @@ let createToken = function (e) {
 
         if(resp.status == 200){
             if(resp.data.type == 'error'){
-
-                console.log(resp.data.message);
                 let alert = document.querySelector('div[class="charge-alert"]');
                 alert.style.display = 'block';
                 alert.innerHTML = resp.data.message;
