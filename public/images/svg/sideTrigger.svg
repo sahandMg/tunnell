@@ -3,13 +3,13 @@
     <style>
       .cls-1 {
       fill: none;
-      stroke: blue;
+      stroke: #00a293;
       stroke-miterlimit: 10;
       stroke-width: 5px;
       }
 
       .cls-2 {
-      fill: blue;
+      fill: #00a293;
       }
       <circle id="main-circle" class="cls-1" cx="0" cy="0" r="20" transform="translate(31.311 31.311)"/>
     </style>

@@ -20,7 +20,8 @@ html, body {
 
 .dashboard-container {
   padding-top: 50px;
-  height: 100%; }
+  height: 100%;
+  overflow: scroll; }
   .dashboard-container .token-btn {
     text-align: right;
     width: 100%; }

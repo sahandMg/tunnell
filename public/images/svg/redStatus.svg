@@ -1,34 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.229 12.229">
-    <defs>
-        <style>
-            .cls-1 {
-            fill: #ef4136;
-            }
-        </style>
-        <circle id="main-circle" class="cls-1"  r="4" transform="translate(6.114 6.114)"/>
-    </defs>
-    <title>redStatus3</title>
-    <g id="Layer_2" data-name="Layer 2">
-        <g id="Layer_1-2" data-name="Layer 1">
-            <use href="#main-circle"/>
-            <circle class="cls-1"  r="4" transform="translate(6.114 6.114)">
-                <animateTransform attributeName='transform'
-                                  type='scale'
-                                  additive="sum"
-                                  from="1"
-                                  to="2"
-                                  begin="0s"
-                                  dur='1s'
-                                  repeatCount="indefinite"
-                />
-                <animate
-                        attributeName='opacity'
-                        from="0.5"
-                        to="0"
-                        dur='1s'
-                        repeatCount="indefinite"
-                />
-            </circle>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18.9 18.9" style="enable-background:new 0 0 18.9 18.9;" xml:space="preserve">
+<defs>
+	<style type="text/css">
+		.st0{fill:#FF0000;}
+		.st1{fill:red}
+	</style>
+	<circle id="main-circle" class="st1" cx="0" cy="0" r="5" transform="translate(9.5 9.5)"/>
+</defs>
+<g>
+	<use href="#main-circle"/>
+	<g id="Layer_1-2">
+		<circle class="st0" cx="0" cy="0" r="5" transform="translate(9.5 9.5)">
+
+			<animateTransform  accumulate="none" additive="sum" attributeName="transform" begin="0s" calcMode="linear" dur="1s" fill="remove" from="1" repeatCount="indefinite" restart="always" to="2" type="scale">
+			</animateTransform>
+
+			<animate  accumulate="none" additive="replace" attributeName="opacity" calcMode="linear" dur="1s" fill="remove" from="0.5" repeatCount="indefinite" restart="always" to="0">
+			</animate>
+		</circle>
+	</g>
+</g>
 </svg>

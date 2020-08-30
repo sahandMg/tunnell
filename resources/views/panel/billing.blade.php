@@ -55,7 +55,7 @@
 
                 </tr>
 
-                <tr style="background-color: white">
+                <tr style="background-color: white;border-top:1px solid gray;border-bottom:1px solid gray">
                     <td></td>
                     <td></td>
                 </tr>

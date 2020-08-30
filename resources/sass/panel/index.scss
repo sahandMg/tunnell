@@ -33,8 +33,14 @@ html,body{
     visibility: visible;
     position: fixed;
   }
+  @include medium_screen{
+    width: 8%;
+  }
   @include extra_small_screen{
     width: 10%;
+  }
+   @include super_small_screen{
+    width: 12%;
   }
 }
 .body-container{

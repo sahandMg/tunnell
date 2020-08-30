@@ -51,10 +51,18 @@ html, body {
       max-width: 780px;
       visibility: visible;
       position: fixed; } }
+  @media screen and (max-width: 1280px) {
+    .side-nav-trigger {
+      max-width: 1280px;
+      width: 8%; } }
   @media screen and (max-width: 480px) {
     .side-nav-trigger {
       max-width: 480px;
       width: 10%; } }
+  @media screen and (max-width: 368px) {
+    .side-nav-trigger {
+      max-width: 368px;
+      width: 12%; } }
 
 .body-container {
   flex-basis: 80%;
